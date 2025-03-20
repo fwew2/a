@@ -12,6 +12,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://sliderm.com/dist/1.0.8/sliderm.css">
     <script src="https://sliderm.com/dist/1.0.8/sliderm.js"></script>
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Home</title>
 </head>
 <body>
@@ -23,7 +29,7 @@
 
 
             <!-- NAVBAR SECTION -->
-            <section class="NAVBR-SECTION">
+            <section class="NAVBR-SECTION" data-aos="fade-down" >
 
                 <!-- NAVBAR -->
                 <nav class="flex justify-between items-center navbar">
@@ -85,10 +91,10 @@
                         <!-- Main Heading -->
                         <h1 class="">
                             <span class="higilight">Navigate</span> Your Learning <br>
-                            <span class="e">Journey!</span>
+                            <span class="">Journey!</span>
                         </h1>
                         <!-- Main paragraph -->
-                        <p class="mt-40 block self-start r">First AI-powered website by SVNU CS <br>
+                        <p class="mt-40 block self-start main-paragraph">First AI-powered website by SVNU CS <br>
                             students to make studying easier for students at any level!
                         </p>
                         <!-- SELECTION -->
@@ -104,7 +110,7 @@
 
 
                     <!-- SECOND element -->
-                    <img class="hmax-w-px w-full" src="assets/Mask group.png" alt="">
+                    <img data-aos="fade-left" class="hmax-w-px w-full" src="assets/Mask group.png" alt="">
                 </div>
             </section>
 
@@ -119,13 +125,13 @@
 
 
                     <!-- first element -->
-                    <div class="text-center">
+                    <div class="text-center" data-aos="fade-up">
 
-                        <img class="max-w-[800px] w-full" src="assets/Mask group.png" alt="">
+                        <img class="max-w-[800px] w-full" data-aos="fade-up" src="assets/Mask group.png" alt="">
 
                     </div>
                     <!-- SECOND element -->
-                    <div class="text-center">
+                    <div class="text-center" data-aos="zoom-in-up">
                         <!-- Main Heading -->
                         <h1 class="text-center">
                             <span class="higilight">Navigate</span> Your Learning <br>
@@ -331,53 +337,54 @@
 
 
 
-        <div class="flex justify-center ...">
+            <div class="flex justify-center ..." data-aos="fade-up"
+            data-aos-duration="4000">
 
+            
+                <div class="grid grid-cols-3 gap-5 master-courses-container">
+
+
+                    <div class="master-courses-element" >
+                        <img class="master-courses-imgs" src="assets/2640ebcb-10e8-4514-adaa-6f46fbacadb1.png" alt="">
+                        <h4>Master Laravl</h4>
+                        <p>TCS Campus Drive-2023</p>
+                    </div>
+                    
+                    <div class="master-courses-element mt-60 ...">
+                        <img class="master-courses-imgs" src="assets/react-icon_svg_.webp" alt="">
+                        <h4>Master React</h4>
+                        <p>TCS Campus Drive-2023</p>
+                    </div>
         
-            <div class="grid grid-cols-3 gap-5 master-courses-container">
+                    <div class="master-courses-element">
+                        <img class="master-courses-imgs" src="assets/python.png" alt="">
+                        <h4>Master Python</h4>
+                        <p>TCS Campus Drive-2023</p>
+                    </div>
+
+                    <div class="master-courses-element">
+                        <img class="master-courses-imgs" src="assets/Sass_Logo_Color.svg.png" alt="">
+                        <h4>Master Python</h4>
+                        <p>TCS Campus Drive-2023</p>
+                    </div>
 
 
-                <div class="master-courses-element" >
-                    <img class="master-courses-imgs" src="assets/2640ebcb-10e8-4514-adaa-6f46fbacadb1.png" alt="">
-                    <h4>Master Laravl</h4>
-                    <p>TCS Campus Drive-2023</p>
+                    <div class="master-courses-element">
+                        <img class="master-courses-imgs" src="assets/free-tailwind-icon@2x.png">
+                        <h4>Master Python</h4>
+                        <p>TCS Campus Drive-2023</p>
+                    </div>
+
+
+                    <div class="master-courses-element">
+                        <img class="master-courses-imgs" src="assets/csharp-logo-265a149e.svg">
+                        <h4>Master Python</h4>
+                        <p>TCS Campus Drive-2023</p>
+                    </div>
+        
                 </div>
-                
-                <div class="master-courses-element mt-60 ...">
-                    <img class="master-courses-imgs" src="assets/react-icon_svg_.webp" alt="">
-                    <h4>Master React</h4>
-                    <p>TCS Campus Drive-2023</p>
-                </div>
-    
-                <div class="master-courses-element">
-                    <img class="master-courses-imgs" src="assets/python.png" alt="">
-                    <h4>Master Python</h4>
-                    <p>TCS Campus Drive-2023</p>
-                </div>
-
-                <div class="master-courses-element">
-                    <img class="master-courses-imgs" src="assets/Sass_Logo_Color.svg.png" alt="">
-                    <h4>Master Python</h4>
-                    <p>TCS Campus Drive-2023</p>
-                </div>
-
-
-                <div class="master-courses-element">
-                    <img class="master-courses-imgs" src="assets/free-tailwind-icon@2x.png">
-                    <h4>Master Python</h4>
-                    <p>TCS Campus Drive-2023</p>
-                </div>
-
-
-                <div class="master-courses-element">
-                    <img class="master-courses-imgs" src="assets/csharp-logo-265a149e.svg">
-                    <h4>Master Python</h4>
-                    <p>TCS Campus Drive-2023</p>
-                </div>
-    
+        
             </div>
-    
-        </div>
 
 
 
@@ -455,36 +462,73 @@
 
 
 
-<!-- 
 
-            <h2 class="feature-section-heading"><span class="higilight">Make</span> your learning journey enjoyable!</h2>
-            <div class="feature-grid-container">
-                <div><img class="feature-section-imgs" src="assets/Graphic.png" alt=""></div>
-                <div class="feature-grid-item">
-                    <h3>SVNU HUB </h3>
-                    <p> is an innovative platform designed to connect students and programmers, providing an interactive learning environment that fosters collaboration and shared knowledge. The platform offers smart tools to enhance coding skills, personalized educational content tailored to each user’s needs, and a vibrant community where users can discuss projects and solve problems together.
-                        Let me know if you want any modifications! 
-                    </p>
-                </div>
-                <div>
-                    <h3>AI-Powered Coding Assistant</h3>
-                    <p>The AI-powered coding assistant in SVNU Hub provides instant solutions to your coding problems, explains code clearly, and suggests optimizations to enhance efficiency. Whether you're a beginner or an expert, this assistant gives you the support you need to improve your programming skills effortlessly!</p>
-                </div>
-                <div class="feature-grid-img"><img class="feature-section-imgs" src="assets/WappGPT - logo.png" alt=""></div>
-                <div><img class="feature-section-imgs" src="assets/Frame 1.png" alt=""></div>
-                <div class="feature-grid-item">
-                    <h3>Learn from Experts and Master Your Subjects!</h3>
-                    <p>SVNU Hub offers a comprehensive library of high-quality video lectures delivered by specialized professors in each subject, ensuring a top-tier learning experience. These detailed explanations cover all key concepts, making it easier for you to understand your courses and excel in your studies.
-                    </p>
-                </div>
-                <div class="feature-grid-item">
-                    <h3>Regular Exams to Track Your Progress</h3>
-                    <p>SVNU Hub offers regular exams to help you assess your knowledge in each subject, identify your strengths, and pinpoint areas for improvement. These tests are carefully designed by experts to ensure an accurate and fair evaluation experience.
-                    </p>
-                </div>
-                <div class="feature-grid-img"><img class="feature-section-imgs" src="assets/Frame 4.png" alt=""></div>
 
-            </div> -->
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -512,13 +556,48 @@
 
 
 
-
-
-
-
-
-
-
+        <footer class="con">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>TEAM</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>SUPPORT</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>FEATURES</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href=""><img src="Features" alt=""></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
 
@@ -560,5 +639,42 @@
 
     </div>
     <script src="main.js"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
-</html>
+</html>      
+
+
+<!-- 
+
+<h2 class="feature-section-heading"><span class="higilight">Make</span> your learning journey enjoyable!</h2>
+<div class="feature-grid-container">
+    <div><img class="feature-section-imgs" src="assets/Graphic.png" alt=""></div>
+    <div class="feature-grid-item">
+        <h3>SVNU HUB </h3>
+        <p> is an innovative platform designed to connect students and programmers, providing an interactive learning environment that fosters collaboration and shared knowledge. The platform offers smart tools to enhance coding skills, personalized educational content tailored to each user’s needs, and a vibrant community where users can discuss projects and solve problems together.
+            Let me know if you want any modifications! 
+        </p>
+    </div>
+    <div>
+        <h3>AI-Powered Coding Assistant</h3>
+        <p>The AI-powered coding assistant in SVNU Hub provides instant solutions to your coding problems, explains code clearly, and suggests optimizations to enhance efficiency. Whether you're a beginner or an expert, this assistant gives you the support you need to improve your programming skills effortlessly!</p>
+    </div>
+    <div class="feature-grid-img"><img class="feature-section-imgs" src="assets/WappGPT - logo.png" alt=""></div>
+    <div><img class="feature-section-imgs" src="assets/Frame 1.png" alt=""></div>
+    <div class="feature-grid-item">
+        <h3>Learn from Experts and Master Your Subjects!</h3>
+        <p>SVNU Hub offers a comprehensive library of high-quality video lectures delivered by specialized professors in each subject, ensuring a top-tier learning experience. These detailed explanations cover all key concepts, making it easier for you to understand your courses and excel in your studies.
+        </p>
+    </div>
+    <div class="feature-grid-item">
+        <h3>Regular Exams to Track Your Progress</h3>
+        <p>SVNU Hub offers regular exams to help you assess your knowledge in each subject, identify your strengths, and pinpoint areas for improvement. These tests are carefully designed by experts to ensure an accurate and fair evaluation experience.
+        </p>
+    </div>
+    <div class="feature-grid-img"><img class="feature-section-imgs" src="assets/Frame 4.png" alt=""></div>
+
+</div> -->
