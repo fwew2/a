@@ -47,3 +47,20 @@ const swiper = new Swiper(".mySwiper", {
     },
 });
 
+function showTab(tabId) {
+    // إخفاء جميع المحتويات
+    document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // إظهار المحتوى المطلوب
+    document.getElementById(tabId).classList.add('active');
+
+    // تحديث الـ Tabs الفعالة
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    // تحديد التاب الفعال
+    event.target.classList.add('active');
+}
