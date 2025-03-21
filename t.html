@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شعار أمازون</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+
+        .logo {
+            font-size: 60px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            color: black;
+            text-transform: lowercase;
+            position: relative;
+        }
+
+        /* إنشاء السهم المنحني */
+        .logo::after {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 20px;
+            background-color: orange;
+            border-radius: 50px 50px 0 0;
+            bottom: -20px;
+            left: 15px;
+            transform: rotate(10deg);
+        }
+
+        /* إنشاء رأس السهم */
+        .logo::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+            bottom: -18px;
+            left: 160px;
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+            transform: rotate(25deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">amazon</div>
+</body>
+</html>

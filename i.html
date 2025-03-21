@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Marketing Solutions</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Marketing Solutions</h1>
+        <p>Streamline your marketing efforts with AI-powered tools...</p>
+        
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('smart-campaigns')">Smart Campaigns</button>
+            <button class="tab" onclick="showTab('personalized-content')">Personalized Content</button>
+            <button class="tab" onclick="showTab('performance-analytics')">Performance Analytics</button>
+            <button class="tab" onclick="showTab('lead-nurturing')">Lead Nurturing</button>
+        </div>
+
+        <div class="content">
+            <div id="smart-campaigns" class="tab-content active">
+                <img src="campaigns.jpg" alt="Marketing">
+                <p>Leverage AI to create, manage, and optimize marketing campaigns...</p>
+                <div class="features">
+                    <div class="feature">🎯 AI-Driven Targeting</div>
+                    <div class="feature">📊 Data-Driven Insights</div>
+                    <div class="feature">⚡ Real-Time Optimization</div>
+                </div>
+            </div>
+            <div id="personalized-content" class="tab-content">
+                <p>Enhance customer interactions with personalized content...</p>
+            </div>
+            <div id="performance-analytics" class="tab-content">
+                <p>Gain comprehensive insights through advanced analytics...</p>
+            </div>
+            <div id="lead-nurturing" class="tab-content">
+                <p>Build strong relationships with potential customers...</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function showTab(tabId) {
+    // إخفاء جميع المحتويات
+    document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // إظهار المحتوى المطلوب
+    document.getElementById(tabId).classList.add('active');
+
+    // تحديث الـ Tabs الفعالة
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    // تحديد التاب الفعال
+    event.target.classList.add('active');
+}
+
+    </script>
+</body>
+</html>

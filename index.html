@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- TAIILWIND && CSS -->
     <link rel="stylesheet" href="app.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+   <!--SWIPER LIBRARY  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://sliderm.com/dist/1.0.8/sliderm.css">
-    <script src="https://sliderm.com/dist/1.0.8/sliderm.js"></script>
 
-
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AOS ANIMATION LIBRARY -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- TITLE && ICON-->
     <title>Home</title>
+    <link rel="icon" type="ico" href="assets/Card elements04.png">
+
 </head>
 <body>
     
@@ -26,51 +33,48 @@
         <header>
 
 
-
-
             <!-- NAVBAR SECTION -->
-            <section class="NAVBR-SECTION" data-aos="fade-down" >
-
+            <section class="NAVBR-SECTION">
                 <!-- NAVBAR -->
                 <nav class="flex justify-between items-center navbar">
 
                     <!-- Logo -->
-                    <a href=""><img class="w-24" src="assets/Card elements04.png" alt="Logo"></a>
+                    <a href="index.html"><img class="w-24" src="assets/Card elements04.png" alt="Logo"></a>
 
 
 
-                    <!-- Desktop Menu -->
+                    <!-- Desktop nav -->
                     <ul class="flex  gap-4 navelements">
                         <li><a href="" class="links">Home</a></li>
                         <li><a href="" class="links">Community</a></li>
                         <li><a href="" class="links">About</a></li>
                         <li><a href="" class="links">Contact</a></li>
                     </ul>
-
-                    <!-- Login & Register Buttons (Desktop) -->
+        
                     <ul class="flex gap-4 navelements nav-butns">
-                        <li><a href="" class="btnss">Login</a></li>
-                        <li><a href="" class="btns">Register</a>
+                        <li><a href="" class="btn-outline">Login</a></li>
+                        <li><a href="" class="btn-primary">Register</a>
                         </li>
                     </ul>
 
 
 
                     
-          
-
-                    <!-- Mobile Menu Button -->
+    
+                    <!-- Mobile nav -->
                     <button id="menu-btn" class="text-white text-4xl">☰</button>
 
-                    <!-- Mobile Menu -->
-                    <div id="mobile-menu" class="hidden flex-col items-center bg-gray-800 text-white py-4 space-y-4 md:hidden">
-                        <a href="#" class="hover:text-blue-400">Home</a>
-                        <a href="#" class="hover:text-blue-400">Community</a>
-                        <a href="#" class="hover:text-blue-400">About</a>
-                        <a href="#" class="hover:text-blue-400">Contact</a>
-                        <a href="#" class="px-4 py-2 border border-white rounded-lg hover:bg-white hover:text-gray-900 transition">Login</a>
-                        <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Register</a>
+                    <div id="mobile-menu">
+                        <ul>
+                            <li><a href="#" class="mobile-link">Home</a></li>
+                            <li><a href="#" class="mobile-link">Community</a></li>
+                            <li><a href="#" class="mobile-link">About</a></li>
+                            <li><a href="#" class="mobile-link">Contact</a></li>
+                            <li><a href="#" class="mobile-link">Login</a></li>
+                            <li><a href="#" class="mobile-link">Register</a></li>
+                        </ul>  
                     </div>
+
                   
                 </nav>
             </section>
@@ -79,120 +83,76 @@
 
 
 
-    
-    
-            <!-- HERO-DESKTOP-SECTION -->
-            <section class="HERO-DESKTOP-SECTION">
-                <div class="grid grid-cols-3">
-
-
-                    <!-- first element -->
-                    <div class="col-span-2">
-                        <!-- Main Heading -->
-                        <h1 class="">
-                            <span class="higilight">Navigate</span> Your Learning <br>
-                            <span class="">Journey!</span>
-                        </h1>
-                        <!-- Main paragraph -->
-                        <p class="mt-40 block self-start main-paragraph">First AI-powered website by SVNU CS <br>
-                            students to make studying easier for students at any level!
-                        </p>
-                        <!-- SELECTION -->
-                        <select class="hero-main-selection " name="" id="">
-                            <option value="">Freshman</option>
-                            <option value="">Sophomore</option>
-                            <option value="">Junior</option>
-                            <option value="">Senior</option>
-                            <option value="">Master</option>
-                        </select>
-
-                    </div>
-
-
-                    <!-- SECOND element -->
-                    <img data-aos="fade-left" class="hmax-w-px w-full" src="assets/Mask group.png" alt="">
-                </div>
-            </section>
-
-
-
-
-
-
-            <!-- MOBILE-HERO-SECTION -->
-            <section class="MOBILE-HERO-SECTION">
-                <div class="grid grid-cols-1 justify-items-center">
-
-
-                    <!-- first element -->
-                    <div class="text-center" data-aos="fade-up">
-
-                        <img class="max-w-[800px] w-full" data-aos="fade-up" src="assets/Mask group.png" alt="">
-
-                    </div>
-                    <!-- SECOND element -->
-                    <div class="text-center" data-aos="zoom-in-up">
-                        <!-- Main Heading -->
-                        <h1 class="text-center">
-                            <span class="higilight">Navigate</span> Your Learning <br>
-                            <span class="">Journey!</span>
-                        </h1>
-                        <!-- Main paragraph -->
-                        <p class="mt-40 block self-start text-center r">First AI-powered website by SVNU CS <br>
-                            students to make studying easier for students at any level!
-                        </p>
-                        <!-- SELECTION -->
-                        <select class="hero-main-selection " name="" id="">
-                            <option value="">Freshman</option>
-                            <option value="">Sophomore</option>
-                            <option value="">Junior</option>
-                            <option value="">Senior</option>
-                            <option value="">Master</option>
-                        </select>
-
-                    </div>
-
-
-           
-               
-                </div>
-            </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-                
-
-            <!-- SCROLL BTN SECTOIN-->
+            <!-- HERO-SECTION -->
             <section>
-                <div class="scrollbtndiv">
-                <img id="scrollbtn" src="assets/arrow-left.png" alt="">
-                </div>
+                <!-- HERO-DESKTOP-SECTION -->
+                <section class="HERO-DESKTOP-SECTION">
+                    <div class="grid grid-cols-3">
+
+
+                        <!-- first element -->
+                        <div class="col-span-2">
+                            <!-- Main Heading -->
+                            <h1 class="">
+                                <span class="highlight">Navigate</span> Your Learning <br>
+                                <span class="">Journey!</span>
+                            </h1>
+                            <!-- Main paragraph -->
+                            <p class="mt-40 block self-start paragraph-effect">First AI-powered website by SVNU CS <br>
+                                students to make studying easier for students at any level!
+                            </p>
+                            <!-- SELECTION -->
+                            <select class="hero-main-selection " name="" id="">
+                                <option value="">Freshman</option>
+                                <option value="">Sophomore</option>
+                                <option value="">Junior</option>
+                                <option value="">Senior</option>
+                                <option value="">Master</option>
+                            </select>
+
+                        </div>
+
+
+                        <!-- SECOND element -->
+                        <img class="hmax-w-px w-full" src="assets/Mask group.png" alt="">
+                    </div>
+                </section>
+
+                <!-- MOBILE-HERO-SECTION -->
+                <section class="MOBILE-HERO-SECTION">
+                    <div class="grid grid-cols-1 justify-items-center">
+
+
+                        <!-- first element -->
+                        <div class="text-center">
+
+                            <img class="max-w-[800px] w-full" src="assets/Mask group.png" alt="">
+
+                        </div>
+                        <!-- SECOND element -->
+                        <div class="text-center">
+                            <!-- Main Heading -->
+                            <h1 class="text-center">
+                                <span class="highlight ">Navigate</span> Your Learning <br>
+                                <span class="">Journey!</span>
+                            </h1>
+                            <!-- Main paragraph -->
+                            <p class="mt-40 block self-start text-center paragraph-effect">First AI-powered website by SVNU CS <br>
+                                students to make studying easier for students at any level!
+                            </p>
+                            <!-- SELECTION -->
+                            <select class="hero-main-selection " name="" id="">
+                                <option value="">Freshman</option>
+                                <option value="">Sophomore</option>
+                                <option value="">Junior</option>
+                                <option value="">Senior</option>
+                                <option value="">Master</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </section>
             </section>
-
-
-
-
 
 
 
@@ -211,8 +171,6 @@
                             <p>Explore,and grow with us!</p>
                         </div>
                     </div>
-            
-            
                     <!-- ELEMENT 3 -->
                     <span class="line"></span>
             
@@ -232,10 +190,6 @@
             
                     <!-- ELEMENT 7 -->
                     <img class="hero-flex-items-img self-start"  src="assets/robot-ai-svgrepo-com.svg" alt="">
-            
-            
-            
-                    
                     <!-- ELEMENT 8 -->
                     <div class="self-start hero-flex-items">
                         <div>
@@ -243,9 +197,6 @@
                             <p>Your intelligent study assistant!</p>
                         </div>
                     </div>
-            
-            
-            
                 </div>
             </section>
 
@@ -295,24 +246,71 @@
                             </div>
                         </div>
                     </div>
-    
-    
-    
-    
-    
                     <!-- buttons -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
-    
-    
                 </div>
-                
-
             </section>
     
             
         </header>
+
+        
+
+
+
+
+
+
+
+
+        <!-- SCROLL BTN SECTOIN-->
+        <section>
+            <div class="scrollbtndiv">
+                <img id="scrollbtn" src="assets/arrow-left.png" alt="">
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -337,68 +335,95 @@
 
 
 
-            <div class="flex justify-center ..." data-aos="fade-up"
-            data-aos-duration="4000">
 
+            <section class="MASTER-COURSES-SECTION text-center">
+                <h2 class="MASTER-COURSES-HEADING"><span class="highlight">Level Up </span> with Master Courses!</h2>
+                
+                
+                <div class="flex justify-center">
+
+                
+                    <div class="grid grid-cols-3 gap-5 master-courses-container ">
+
+
+                        <div class="master-courses-element" >
+                            <img class="master-courses-imgs" src="assets/2640ebcb-10e8-4514-adaa-6f46fbacadb1.png" alt="">
+                            <h4 class="master-courses-title">Master Laravl</h4>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                        </div>
+                        
+                        <div class="master-courses-element">
+                            <img class="master-courses-imgs" src="assets/free-tailwind-icon2x.png" alt="">
+                            <h4 class="master-courses-title">Master React</h4>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                        </div>
             
-                <div class="grid grid-cols-3 gap-5 master-courses-container">
+                        <div class="master-courses-element">
+                            <img class="master-courses-imgs" src="assets/Vue.js_Logo_2.svg.png" alt="">
+                            <h4 class="master-courses-title">Master Python</h4>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                        </div>
+
+                        <div class="master-courses-element">
+                            <img class="master-courses-imgs" src="assets/Sass_Logo_Color.svg.png" alt="">
+                            <h4 class="master-courses-title">Master Python</h4>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                        </div>
 
 
-                    <div class="master-courses-element" >
-                        <img class="master-courses-imgs" src="assets/2640ebcb-10e8-4514-adaa-6f46fbacadb1.png" alt="">
-                        <h4>Master Laravl</h4>
-                        <p>TCS Campus Drive-2023</p>
+                        <div class="master-courses-element">
+                            <img class="master-courses-imgs" src="assets/free-tailwind-icon@2x.png">
+                            <h4 class="master-courses-title">Master Python</h4>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                        </div>
+
+
+                        <div class="master-courses-element">
+                            <img class="master-courses-imgs" src="assets/csharp-logo-265a149e.svg">
+                            <h4 class="master-courses-title">Master Python</h4>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                        </div>
+            
                     </div>
-                    
-                    <div class="master-courses-element mt-60 ...">
-                        <img class="master-courses-imgs" src="assets/react-icon_svg_.webp" alt="">
-                        <h4>Master React</h4>
-                        <p>TCS Campus Drive-2023</p>
-                    </div>
-        
-                    <div class="master-courses-element">
-                        <img class="master-courses-imgs" src="assets/python.png" alt="">
-                        <h4>Master Python</h4>
-                        <p>TCS Campus Drive-2023</p>
-                    </div>
-
-                    <div class="master-courses-element">
-                        <img class="master-courses-imgs" src="assets/Sass_Logo_Color.svg.png" alt="">
-                        <h4>Master Python</h4>
-                        <p>TCS Campus Drive-2023</p>
-                    </div>
-
-
-                    <div class="master-courses-element">
-                        <img class="master-courses-imgs" src="assets/free-tailwind-icon@2x.png">
-                        <h4>Master Python</h4>
-                        <p>TCS Campus Drive-2023</p>
-                    </div>
-
-
-                    <div class="master-courses-element">
-                        <img class="master-courses-imgs" src="assets/csharp-logo-265a149e.svg">
-                        <h4>Master Python</h4>
-                        <p>TCS Campus Drive-2023</p>
-                    </div>
-        
+            
                 </div>
-        
-            </div>
 
+            </section>
+            
 
 
 
-        
 
 
+            <!-- <section class="FEATURE-SECTION"> 
+                <div class="FEATURE-SECTION-container text-center">
+                    <h2>Empower Your Learning with Smart Tools</h2>
+                    <p class="paragraph-effect">Our website is designed to help students learn programming and understand academic subjects in a simple and efficient way. By leveraging artificial intelligence, we provide smart tools to enhance productivity and make learning easier. The platform offers solutions for coding challenges, study materials, and task management, all in one place.</p>
+                    <div class="tabs">
+                        <button class="tab active  features-btn" onclick="showTab('smart-campaigns')">Smart Campaigns</button>
+                        <button class="tab features-btn" onclick="showTab('personalized-content')">Personalized Content</button>
+                        <button class="tab features-btn" onclick="showTab('performance-analytics')">Performance Analytics</button>
+                        <button class="tab features-btn" onclick="showTab('lead-nurturing')">Lead Nurturing</button>
+                    </div>
 
 
+                    <div class="content flex justify-between" >
+                        <img class="feature-section-imgs" src="assets/Frame 1.png " alt="">
+                
+                        <div class="flex justify-end">
+                            <p class="paragraph-effect justify-self-center" >lorem10</p>
+                        </div>
+                       
+                        
+                       
 
 
+                    </div>
 
 
 
+                </div>
+ -->
 
 
 
@@ -432,58 +457,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </section>
 
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -544,6 +520,69 @@
 
 
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -647,34 +686,52 @@
 </body>
 </html>      
 
-
 <!-- 
+<section class="FEATURE-SECTION">
 
-<h2 class="feature-section-heading"><span class="higilight">Make</span> your learning journey enjoyable!</h2>
-<div class="feature-grid-container">
-    <div><img class="feature-section-imgs" src="assets/Graphic.png" alt=""></div>
-    <div class="feature-grid-item">
-        <h3>SVNU HUB </h3>
-        <p> is an innovative platform designed to connect students and programmers, providing an interactive learning environment that fosters collaboration and shared knowledge. The platform offers smart tools to enhance coding skills, personalized educational content tailored to each user’s needs, and a vibrant community where users can discuss projects and solve problems together.
-            Let me know if you want any modifications! 
-        </p>
-    </div>
-    <div>
-        <h3>AI-Powered Coding Assistant</h3>
-        <p>The AI-powered coding assistant in SVNU Hub provides instant solutions to your coding problems, explains code clearly, and suggests optimizations to enhance efficiency. Whether you're a beginner or an expert, this assistant gives you the support you need to improve your programming skills effortlessly!</p>
-    </div>
-    <div class="feature-grid-img"><img class="feature-section-imgs" src="assets/WappGPT - logo.png" alt=""></div>
-    <div><img class="feature-section-imgs" src="assets/Frame 1.png" alt=""></div>
-    <div class="feature-grid-item">
-        <h3>Learn from Experts and Master Your Subjects!</h3>
-        <p>SVNU Hub offers a comprehensive library of high-quality video lectures delivered by specialized professors in each subject, ensuring a top-tier learning experience. These detailed explanations cover all key concepts, making it easier for you to understand your courses and excel in your studies.
-        </p>
-    </div>
-    <div class="feature-grid-item">
-        <h3>Regular Exams to Track Your Progress</h3>
-        <p>SVNU Hub offers regular exams to help you assess your knowledge in each subject, identify your strengths, and pinpoint areas for improvement. These tests are carefully designed by experts to ensure an accurate and fair evaluation experience.
-        </p>
-    </div>
-    <div class="feature-grid-img"><img class="feature-section-imgs" src="assets/Frame 4.png" alt=""></div>
 
-</div> -->
+    <h2 class="feature-section-heading"><span class="highlight">Make</span> your learning journey enjoyable!</h2>
+
+
+
+    <div class="feature-grid-container">
+        <div><img class="feature-section-imgs" src="assets/Graphic.png" alt=""  data-aos="fade-up"
+            data-aos-duration="3000"></div>
+        <div class="feature-grid-item"  data-aos="fade-up"
+        data-aos-duration="3000">
+            <h3>SVNU HUB </h3>
+            <p> is an innovative platform designed to connect students and programmers, providing an interactive learning environment that fosters collaboration and shared knowledge. The platform offers smart tools to enhance coding skills, personalized educational content tailored to each user’s needs, and a vibrant community where users can discuss projects and solve problems together.
+                Let me know if you want any modifications! 
+            </p>
+        </div>
+        <div data-aos="fade-up"
+        data-aos-duration="3000">
+            <h3>AI-Powered Coding Assistant</h3>
+            <p>The AI-powered coding assistant in SVNU Hub provides instant solutions to your coding problems, explains code clearly, and suggests optimizations to enhance efficiency. Whether you're a beginner or an expert, this assistant gives you the support you need to improve your programming skills effortlessly!</p>
+        </div>
+        <div class="feature-grid-img"  data-aos="fade-up"
+        data-aos-duration="3000"><img class="feature-section-imgs" src="assets/WappGPT - logo.png" alt=""></div>
+        <div  data-aos="fade-up"
+        data-aos-duration="3000"><img class="feature-section-imgs" src="assets/Frame 1.png" alt=""></div>
+        <div class="feature-grid-item" data-aos="fade-up"
+        data-aos-duration="3000">
+            <h3>Learn from Experts and Master Your Subjects!</h3>
+            <p>SVNU Hub offers a comprehensive library of high-quality video lectures delivered by specialized professors in each subject, ensuring a top-tier learning experience. These detailed explanations cover all key concepts, making it easier for you to understand your courses and excel in your studies.
+            </p>
+        </div>
+        <div class="feature-grid-item" data-aos="fade-up"
+        data-aos-duration="3000">
+            <h3>Regular Exams to Track Your Progress</h3>
+            <p>SVNU Hub offers regular exams to help you assess your knowledge in each subject, identify your strengths, and pinpoint areas for improvement. These tests are carefully designed by experts to ensure an accurate and fair evaluation experience.
+            </p>
+        </div>
+        <div class="feature-grid-img"><img class="feature-section-imgs" src="assets/Frame 4.png" alt="" data-aos="fade-up"
+            data-aos-duration="3000"></div>
+    
+    </div>
+    
+
+
+
+</section>
+ -->
