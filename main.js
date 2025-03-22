@@ -64,3 +64,7 @@ function showTab(tabId) {
     // تحديد التاب الفعال
     event.target.classList.add('active');
 }
+
+
+
+

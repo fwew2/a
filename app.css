@@ -31,17 +31,19 @@ h2 {
     letter-spacing: -2px;
 }
 h3 {
-    font-size: clamp(24px, 3.5vw, 40px);
+    font-size: clamp(24px, 3.5vw, 38px);
     letter-spacing: -2px;
 }
 h4 {
     font-size: clamp(20px, 3vw, 32px);
     letter-spacing: -2px;
+
 }
 h5 {
     font-size: clamp(18px, 2.5vw, 24px);
     letter-spacing: -2px;
 }
+
 p {
     font-size: clamp(12px, 2vw, 20px);
     color: whitesmoke;
@@ -292,22 +294,10 @@ ul{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----HERO SECTION-----*/
 
 .HERO-DESKTOP-SECTION{
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     display: block;
 }
 .hero-main-selection,.hero-main-selection:focus{
@@ -344,17 +334,9 @@ ul{
 
 
 
-
-
-
-
-
-
-
-
 /*-----SERVICES SECTION-----*/
 .SERVICES-DESKTOP-SECTION{
-    margin-bottom: 300px;
+    margin-bottom: 250px;
 }
 
 .Services-headin{
@@ -395,22 +377,6 @@ margin-top: 15px;
         display: none;
      }
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -511,6 +477,7 @@ margin-top: 15px;
     background-color: rgba(33, 37, 41, 0.3); 
     border: whitesmoke 1px solid;
     border-radius: 40px; 
+    background: whitesmoke;
 }
 
 
@@ -528,7 +495,7 @@ margin-top: 15px;
 }
 
 .tab.active {
-   background-color: rgba(185, 134, 221, 0.7); 
+   background-color: rgba(0, 0, 0, 0.8); 
     color: white;
 }
 
@@ -579,6 +546,94 @@ margin-top: 15px;
 }
 }
 
+/*-----ABOUT SECTION-----*/
+
+
+.about-heading{
+    margin-bottom: 120px;
+ 
+}
+.abouhth4-heading{
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    color: #D9D9D9;
+ 
+}
+
+.about-linee{
+    width: 80px;
+    height: 8px;
+    background: linear-gradient(to right, #1F5EFF, #B986DD);
+}
+.about-names{
+    margin: 1px;
+    letter-spacing: 0px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -588,6 +643,11 @@ margin-top: 15px;
 
 .con{
     margin-top: 300px;
+    background-color: black;
+    padding: 15px;
+    padding-top: 50px;
+    width: 100%;
+    padding-bottom: 50px;
 }
 .row{
     display: flex;
@@ -643,10 +703,12 @@ margin-top: 15px;
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
+    background-color: #ffffff;
 }
 .footer-col .social-links a:hover{
     color: #24262b;
     background-color: #ffffff;
+    transform: scale(1.08);
 }
 @media(max-width: 767px){
     .footer-col{
@@ -659,6 +721,24 @@ margin-top: 15px;
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
