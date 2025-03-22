@@ -473,12 +473,6 @@ margin-top: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin: auto;
 }
-.taps-container{
-    background-color: rgba(33, 37, 41, 0.3); 
-    border: whitesmoke 1px solid;
-    border-radius: 40px; 
-    background: whitesmoke;
-}
 
 
 .tab {
@@ -498,6 +492,36 @@ margin-top: 15px;
    background-color: rgba(0, 0, 0, 0.8); 
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content {
     margin-top: 20px;
@@ -541,8 +565,12 @@ margin-top: 15px;
   
     }
 
+
 .taps-container{
     flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
 }
 }
 
@@ -582,6 +610,21 @@ margin-top: 15px;
 
 
 
+
+.swiper {
+    width: 80%;
+    height: 800px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ 
+  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 
 
