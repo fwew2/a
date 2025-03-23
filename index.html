@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="app.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-
    <!--SWIPER LIBRARY  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -29,10 +28,8 @@
 </head>
 <body>
     
-    <div class="max-w-[1200px] all-code-container">
+    <div class="max-w-[1200px] all-code-container overflow-hidden">
         <header>
-
-
             <!-- NAVBAR SECTION -->
             <section class="NAVBR-SECTION">
                 <!-- NAVBAR -->
@@ -53,10 +50,6 @@
                         <li><a href="" class="btn-outline">Login</a></li>
                         <li><a href="" class="btn-primary">Register</a></li>
                     </ul>
-
-
-
-                    
     
                     <!-- Mobile nav -->
                     <button id="menu-btn" class="text-white text-4xl">☰</button>
@@ -75,6 +68,9 @@
                   
                 </nav>
             </section>
+
+
+
 
 
 
@@ -114,6 +110,9 @@
                         <img class="hmax-w-px w-full" src="assets/Mask group.png" alt="">
                     </div>
                 </section>
+
+
+
 
                 <!-- MOBILE-HERO-SECTION -->
                 <section class="MOBILE-HERO-SECTION">
@@ -249,9 +248,31 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </section>
-    
+
+
+
+            <script>
+                const swiper = new Swiper(".mySwiper", {
+                loop: true,            // تشغيل السلايدر بشكل دائري
+                navigation: {          // أزرار التنقل
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {          // النقاط السفلية
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {            // تشغيل تلقائي
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                });
+            </script>
             
         </header>
+
+
+
 
         
 
@@ -367,7 +388,8 @@
 
 
                         <div class="master-courses-element">
-                            <img width="96" height="96" src="https://img.icons8.com/fluency/96/node-js.png" alt="node-js"/>                            <h4 class="master-courses-title">Master Python</h4>
+                            <img width="96" height="96" src="https://img.icons8.com/fluency/96/node-js.png" alt="node-js"/> 
+                            <h4 class="master-courses-title">Master Python</h4>
                             <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
                         </div>
 
@@ -459,79 +481,96 @@
 
 
 
-
             <section class="FEATURE-SECTION"> 
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-    
-    
-                            <img class="ch1 feature-section-imgs" src="assets/Shadow.png" alt="" >
+                <div class="swiper swiper-custom">
+                    <div class="swiper-wrapper swiper-wrapper-custom">
+                        <div class="swiper-slide swiper-slide-custom text-center" >
+
+                            <img class="ch1 feature-section-imgs w" src="assets/Shadow.png" alt="" >
                             <div>
-                                <h3 class="">Ai Chatboot</h3>
-                                <p class="ch2 paragraph-effect">Our website's AI system is powered by a cutting-edge model from the latest fourth generation, ensuring high accuracy and efficiency. It provides completely free support for all students, regardless of their level, helping them solve programming problems, understand academic subjects, and improve their code intelligently and effortlessly. Additionally, it offers personalized suggestions based on each student's needs, making it a powerful tool for learning and development.</p>
-                                <a href="" class="btn-primary feature-btns" >LETS TRY</a>
+                                <h3>Ai Chatbot</h3>
+                                <p class="ch2 paragraph-effect">Our website's AI system is powered by a cutting-edge model from the latest fourth generation, ensuring high accuracy and efficiency...</p>
+                                <a href="" class="btn-primary feature-btns">LET'S TRY</a>
                             </div>
-    
-    
-                            
                         </div>
-                        <div class="swiper-slide">
-                            <img class="ch1 feature-section-imgs" src="assets/Podium.png" alt="" >
+            
+                        <div class="swiper-slide swiper-slide-custom text-center">
+                            <img class="ch1 feature-section-imgs w" src="assets/Podium.png" alt="">
                             <div>
-                                <h3 class="">Ai Chatboot</h3>
-                                <p class="ch2 paragraph-effect">Our website's AI system is powered by a cutting-edge model from the latest fourth generation, ensuring high accuracy and efficiency. It provides completely free support for all students, regardless of their level, helping them solve programming problems, understand academic subjects, and improve their code intelligently and effortlessly. Additionally, it offers personalized suggestions based on each student's needs, making it a powerful tool for learning and development.</p>
-                                <a href="" class="btn-primary feature-btns" >LETS TRY</a>
+                                <h3>Ai Chatbot</h3>
+                                <p class="ch2 paragraph-effect">Our website's AI system is powered by a cutting-edge model from the latest fourth generation, ensuring high accuracy and efficiency...</p>
+                                <a href="" class="btn-primary feature-btns">LET'S TRY</a>
                             </div>
-    
-    
-    
                         </div>
-                        <div class="swiper-slide">
-                            <img class="ch1 feature-section-imgs" src="assets/3532.jpg " alt="">
+            
+                        <div class="swiper-slide swiper-slide-custom text-center">
+                            <img class="ch1 feature-section-imgs w" src="assets/3532.jpg" alt="">
                             <div>
-                                <h3 class="">Ai Chatboot</h3>
-                                <p class="ch2 paragraph-effect">Our website's AI system is powered by a cutting-edge model from the latest fourth generation, ensuring high accuracy and efficiency. It provides completely free support for all students, regardless of their level, helping them solve programming problems, understand academic subjects, and improve their code intelligently and effortlessly. Additionally, it offers personalized suggestions based on each student's needs, making it a powerful tool for learning and development.</p>
-                                <a href="" class="btn-primary feature-btns" >LETS TRY</a>
+                                <h3>Ai Chatbot</h3>
+                                <p class="ch2 paragraph-effect">Our website's AI system is powered by a cutting-edge model from the latest fourth generation, ensuring high accuracy and efficiency...</p>
+                                <a href="" class="btn-primary feature-btns">LET'S TRY</a>
                             </div>
-    
-    
-    
-    
-    
                         </div>
-    
-                        <div class="swiper-slide">
-    
-    
-                            <img class="ch1 feature-section-imgs" src="assets/audit-approval-standards-compliance-concept-600nw-2364107183.webp" alt="">
+            
+                        <div class="swiper-slide swiper-slide-custom text-center ">
+                            <img class="ch1 feature-section-imgs w" src="assets/audit-approval-standards-compliance-concept-600nw-2364107183.webp" alt="">
                             <div>
-                                <h3 class="">Ai Chatboot</h3>
-                                <p class="ch2 paragraph-effect">Our website's AI system is powered by a cutting-edge model from the latest fourth generation, ensuring high accuracy and efficiency. It provides completely free support for all students, regardless of their level, helping them solve programming problems, understand academic subjects, and improve their code intelligently and effortlessly. Additionally, it offers personalized suggestions based on each student's needs, making it a powerful tool for learning and development.</p>
-                                <a href="" class="btn-primary feature-btns" >LETS TRY</a>
+                                <h3>Ai Chatbot</h3>
+                                <p class="ch2 paragraph-effect">Our website's AI system is powered by a cutting-edge model from the latest fourth generation, ensuring high accuracy and efficiency...</p>
+                                <a href="" class="btn-primary feature-btns">LET'S TRY</a>
                             </div>
-    
-    
-    
                         </div>
-    
-    
-    
-    
-    
-    
-    
-    
                     </div>
-                    <!-- أزرار التحكم -->
-                    <div class="swiper-pagination"></div>
+            
+                    <div class="swiper-pagination swiper-pagination-custom"></div>
                 </div>
-                
-    
+            </section> 
+            
+            <script>
+const swiperCustom = new Swiper('.swiper-custom', {
+    loop: true,  
+    direction: 'vertical', // اتجاه عمودي
+    slidesPerView: 1,
+    spaceBetween: 10,
+    mousewheel: true,
+    pagination: {
+        el: '.swiper-pagination-custom',
+        clickable: true,
+        dynamicBullets: true // يجعل النقاط ديناميكية
+    }
+});
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             
-            </section>
 
            
 
@@ -639,7 +678,7 @@
 
 
 
-            </section>
+            </section> 
 
 
 
@@ -648,20 +687,6 @@
 
 
 
-
-
-            <script>
-
-const swiper = new Swiper('.swiper', {
-    direction: 'vertical',
-    slidesPerView: 1,
-    spaceBetween: 10,
-    mousewheel: true,
-    pagination: { el: '.swiper-pagination', clickable: true },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
-});
-
-            </script>
 
 
 
