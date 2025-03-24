@@ -166,7 +166,10 @@ ul{
 
 
 
-
+.w{
+    margin: 0 auto;
+  
+}
 
 
 
@@ -436,6 +439,62 @@ margin-top: 15px;
 
 /*-----FEATURES SECTION-----*/
 
+.feat-section{
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.feature-imgs{
+    max-width:350px;
+    width: 100%;
+}
+.feat-title{
+    margin: 50px 100px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feat-para {
+    color: rgba(255, 255, 255, 0.6); /* لون فاتح مع شفافية */
+    font-weight: 300; /* خط رفيع جدًا */
+    font-size: 24px; /* حجم صغير */
+    opacity: 0.7; /* شفافية إضافية */
+    transition: opacity 0.3s ease-in-out; 
+ 
+}
+
+.feat-para:hover {
+    opacity: 1; /* عند تمرير الماوس يصبح أكثر وضوحًا */
+}
+
+
+
+
+
+
+
+.swiper-custom {
+    width: 70%;
+    height: 800px;
+
+    border-radius: 50px;
+ 
+}
+
+.swiper-slide-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
+
+
 
  
 
@@ -444,7 +503,7 @@ margin-top: 15px;
 
 .about-heading{
     margin-bottom: 120px;
- 
+    margin-top: 300px;
 }
 .abouhth4-heading{
     font-weight: 500;
@@ -480,52 +539,6 @@ margin-top: 15px;
 .aboutus{
     padding: 30px 60px;
 }
-
-
-.w{
-    margin: 0 auto;
-  
-}
-
-
-.swiper-pagination-custom {
-    position: absolute;
-    right: 10px; /* ضعها على الجانب */
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-.swiper-pagination-bullet {
-    background-color: #fff; /* لون النقاط */
-    opacity: 0.6;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #007bff; /* لون النقطة النشطة */
-    opacity: 1;
-}
-
-
-
-
-
-.swiper-custom {
-    width: 70%;
-    height: 600px;
-    background-color: rgba(33, 37, 41, 0.6); 
-    border-radius: 50px;
-    border: 1px solid red;
-}
-
-.swiper-slide-custom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
 
 
 
@@ -679,48 +692,3 @@ margin-top: 15px;
 
 
 
-
-.faq-container {
-    max-width: 70%;
-    margin: auto;
-}
-.faq-item {
-
-  
-
-
-
-  
-
-
-   
-
-
-
-
-
-    border: #0c2666 solid 2px;
-    justify-items: center;
-    background-color: rgba(33, 37, 41, 0.3); 
-    padding: 10px 20px;
-    border-radius: 10px;
-
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-
-
-
-
-
-
-}
-
-.faq-question {
-    font-size: 18px;
-    font-weight: bold;
-}
-.faq-answer {
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #bbb;
-}
