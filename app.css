@@ -449,7 +449,16 @@ margin-top: 15px;
     max-width: 350px;
     width: 100%;
     transition: transform 0.4s ease, box-shadow 0.4s ease; /* تأثير سلس */
+
 }
+@media(max-width: 450px){
+    .feature-imgs{
+        width: 100%;
+        max-width: 270px;
+
+    }
+}
+
 
 .feature-imgs:hover {
     transform: scale(1.1) rotate(2deg); /* تكبير بنسبة 10% مع تدوير خفيف */
