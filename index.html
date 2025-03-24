@@ -31,7 +31,10 @@
     <div class="max-w-[1200px] all-code-container overflow-hidden">
         <header>
             <!-- NAVBAR SECTION -->
-            <section class="NAVBR-SECTION">
+            <section class="NAVBR-SECTION"
+            data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
+            >
                 <!-- NAVBAR -->
                 <nav class="flex justify-between items-center navbar">
 
@@ -86,16 +89,22 @@
                         <!-- first element -->
                         <div class="col-span-2">
                             <!-- Main Heading -->
-                            <h1 class="">
+                            <h1 class=""
+                            data-aos="fade-right"
+                            >
                                 <span class="highlight">Navigate</span> Your Learning <br>
                                 <span class="">Journey!</span>
                             </h1>
                             <!-- Main paragraph -->
-                            <p class="mt-40 block self-start paragraph-effect">First AI-powered website by SVNU CS <br>
-                                students to make studying easier for students at any level!
-                            </p>
+
+                            <p  class="mt-40 block self-start paragraph-effect" id="main-para"
+                            data-aos="fade-right"
+                            ></p>
                             <!-- SELECTION -->
-                            <select class="hero-main-selection " name="" id="">
+                            <select class="hero-main-selection " name="" id=""
+                            data-aos="fade-right"
+                            data-aos-duration="3000"
+                            >
                                 <option value="">Freshman</option>
                                 <option value="">Sophomore</option>
                                 <option value="">Junior</option>
@@ -107,7 +116,10 @@
 
 
                         <!-- SECOND element -->
-                        <img class="hmax-w-px w-full" src="assets/Mask group.png" alt="">
+                        <img class="hmax-w-px w-full" src="assets/Mask group.png" alt=""
+                        data-aos="fade-left"
+                        data-aos-duration="3000"
+                        >
                     </div>
                 </section>
 
@@ -120,7 +132,10 @@
 
 
                         <!-- first element -->
-                        <div class="text-center">
+                        <div class="text-center"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                        >
 
                             <img class="max-w-[800px] w-full" src="assets/Mask group.png" alt="">
 
@@ -128,16 +143,19 @@
                         <!-- SECOND element -->
                         <div class="text-center">
                             <!-- Main Heading -->
-                            <h1 class="text-center">
+                            <h1 class="text-center"
+                            data-aos="fade-right"
+                            >
                                 <span class="highlight ">Navigate</span> Your Learning <br>
                                 <span class="">Journey!</span>
                             </h1>
                             <!-- Main paragraph -->
-                            <p class="mt-40 block self-start text-center paragraph-effect">First AI-powered website by SVNU CS <br>
-                                students to make studying easier for students at any level!
-                            </p>
+                            <p  class="mt-40 block self-start paragraph-effect" id="main-para"></p>
                             <!-- SELECTION -->
-                            <select class="hero-main-selection " name="" id="">
+                            <select class="hero-main-selection " name="" id=""
+                            data-aos="fade-left"
+                            data-aos-duration="3000"
+                            >
                                 <option value="">Freshman</option>
                                 <option value="">Sophomore</option>
                                 <option value="">Junior</option>
@@ -151,7 +169,49 @@
             </section>
 
 
+            <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const text = "First AI-powered website by SVNU CS <br> students to make studying easier for students at any level!";
+                        
+                        const paragraphs = document.querySelectorAll("#main-para"); // جلب كل العناصر التي تحمل id="main-para"
+                        
+                        paragraphs.forEach(paragraph => {
+                            let index = 0;
+                            let isTyping = false; // منع إعادة التأثير عند السكرول المتكرر
 
+                            function type() {
+                                if (index < text.length) {
+                                    if (text.substring(index, index + 4) === "<br>") {
+                                        paragraph.innerHTML += "<br>";
+                                        index += 4;
+                                    } else {
+                                        paragraph.innerHTML += text[index];
+                                        index++;
+                                    }
+                                    setTimeout(type,35);
+                                } else {
+                                    paragraph.style.opacity = "1";
+                                }
+                            }
+
+                            const observer = new IntersectionObserver(entries => {
+                                entries.forEach(entry => {
+                                    if (entry.isIntersecting && !isTyping) {
+                                        isTyping = true;
+                                        type();
+                                    }
+                                });
+                            }, { threshold: 0.5 });
+
+                            observer.observe(paragraph);
+                        });
+                    });
+
+
+
+
+
+            </script>
 
 
             <!-- Desktop SERVICES SECTION -->
@@ -352,14 +412,25 @@
 
 
 
-            <section class="MASTER-COURSES-SECTION text-center" >
-                <h2 class="MASTER-COURSES-HEADING"><span class="highlight">Level Up </span> with Master Courses!</h2>
+            <section class="MASTER-COURSES-SECTION text-center"
+            data-aos="zoom-in-up"
+            >
+                <h2 class="MASTER-COURSES-HEADING"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                ><span class="highlight">Level Up </span> with Master Courses!</h2>
                 
                 
                 <div class="flex justify-center">
 
                 
-                    <div class="grid grid-cols-3 gap-5 master-courses-container ">
+                    <div class="grid grid-cols-3 gap-5 master-courses-container "
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    
+                    >
 
 
                         <div class="master-courses-element" >
@@ -465,7 +536,9 @@
 
 
 
-
+            <div class="robot-container">
+                <div id="robot-message" class="robot-message"><p>Hello! I am your AI Chatbot 🤖</p></div>
+            </div>
 
 
 
@@ -475,7 +548,11 @@
 
 
 
-                    <img class="ch1 feature-section-imgs w feature-imgs" src="assets/3532.jpg" alt="">
+                    <img class="ch1 feature-section-imgs w feature-imgs" src="assets/3532.jpg" alt=""
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    >
                     <div>
                         <h3 class="feat-title">Ai Chatbot</h3>
                         <p class="ch2 paragraph-effect feat-para" id="typing-paragraph"></p>
@@ -496,7 +573,10 @@
                         if (index < text.length) {
                             paragraph.innerHTML += text[index]; // إضافة الحرف التالي
                             index++;
-                            setTimeout(type, 50); // سرعة الكتابة
+                            setTimeout(type, 60); // سرعة الكتابة
+                        }
+                        else {
+                            paragraph.style.opacity = "1"; // بعد انتهاء الكتابة تصبح الفقرة مرئية
                         }
                     }
 
@@ -509,8 +589,13 @@
                         });
                     }, { threshold: 0.5 }); // التأثير يبدأ عندما يكون 50% من العنصر ظاهرًا
 
-                    observer.observe(paragraph); // مراقبة الفقرة
+                    observer.observe(paragraph); // مراقب
+
+
+                    
                 });
+
+
 
 
             </script>
@@ -555,7 +640,11 @@
 
 
             
-            <section class="About-SECTION overflow-hidden" id="About" >
+            <section class="About-SECTION overflow-hidden" id="About" 
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            
+            >
                 <h2 class="text-center about-heading"><span class="highlight">About</span>Us</h2>
                 <div class="flex justify-center aboutus" >
                     

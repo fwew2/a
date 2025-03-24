@@ -444,9 +444,16 @@ margin-top: 15px;
     margin-bottom: 250px;
 }
 
-.feature-imgs{
-    max-width:350px;
+
+.feature-imgs {
+    max-width: 350px;
     width: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* تأثير سلس */
+}
+
+.feature-imgs:hover {
+    transform: scale(1.1) rotate(2deg); /* تكبير بنسبة 10% مع تدوير خفيف */
+   
 }
 .feat-title{
     margin: 50px 100px;
@@ -455,19 +462,50 @@ margin-top: 15px;
 }
 
 .feat-para {
-    color: rgba(255, 255, 255, 0.6); /* لون فاتح مع شفافية */
+    color: rgba(255, 255, 255, 0.5); /* لون فاتح مع شفافية */
     font-weight: 300; /* خط رفيع جدًا */
     font-size: 24px; /* حجم صغير */
-    opacity: 0.7; /* شفافية إضافية */
+    opacity: 0.5; /* شفافية إضافية */
     transition: opacity 0.3s ease-in-out; 
  
 }
 
 .feat-para:hover {
-    opacity: 1; /* عند تمرير الماوس يصبح أكثر وضوحًا */
+    opacity: 1;
+     /* عند تمرير الماوس يصبح أكثر وضوحًا */
+     color: rgba(255, 255, 255, 0.85);
+
 }
 
+.robot-container {
+    position: relative;
+    display: inline-block;
+}
 
+.robot-message {
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+
+
+
+
+
+
+
+
+    
+}
 
 
 
@@ -623,10 +661,12 @@ margin-top: 15px;
     position: absolute;
     left:0;
     bottom: -10px;
-    background-color: #e91e63;
+   
     height: 1px;
     box-sizing: border-box;
     width: 50px;
+    border: #1F5EFF solid 0.5px; 
+    box-shadow: 0 0 10px 3px #0c2666;
 }
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
