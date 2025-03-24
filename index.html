@@ -459,6 +459,45 @@
 
 
 
+            <section class="FAQ-SECTION text-center" >
+                <h2 class="FAQ-Heading"><span class="highlight">FA</span> Q ❓</h2>
+
+                        <div class="faq-container">
+                          
+                            
+                            <div class="faq-item" onclick="toggleAnswer(this)">
+                                <div class="faq-question">
+                                    <h4>>What is the purpose of this website ?</h4>
+                                </div>
+                                <div class="faq-answer"><p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p></div>
+                            </div>
+                    
+                            <div class="faq-item" onclick="toggleAnswer(this)">
+                                <div class="faq-question">كيف يمكنني التسجيل في الدورات؟</div>
+                                <div class="faq-answer">يمكنك التسجيل بسهولة عن طريق إنشاء حساب، ثم اختيار الدورة التي ترغب في الانضمام إليها والبدء فورًا!</div>
+                            </div>
+                    
+                            <div class="faq-item" onclick="toggleAnswer(this)">
+                                <div class="faq-question">هل جميع الدورات مجانية؟</div>
+                                <div class="faq-answer">بعض الدورات مجانية بالكامل، بينما قد تتطلب الدورات المتقدمة رسومًا رمزية لدعم المنصة وضمان جودة المحتوى.</div>
+                            </div>
+                    
+                            <div class="faq-item" onclick="toggleAnswer(this)">
+                                <div class="faq-question">هل سأحصل على شهادة بعد إكمال الدورة؟</div>
+                                <div class="faq-answer">نعم! بعد إتمام الدورة واجتياز الاختبارات، ستحصل على شهادة رقمية يمكنك إضافتها إلى ملفك الشخصي أو LinkedIn.</div>
+                            </div>
+                        </div>
+
+            </section>
+
+                <script>
+                    function toggleAnswer(element) {
+                        var answer = element.querySelector(".faq-answer");
+                        var isVisible = answer.style.display === "block";
+                        document.querySelectorAll(".faq-answer").forEach(a => a.style.display = "none");
+                        answer.style.display = isVisible ? "none" : "block";
+                    }
+                </script>
 
 
 
@@ -478,9 +517,7 @@
 
 
 
-
-
-
+            <!-- 
             <section class="FEATURE-SECTION"> 
                 <div class="swiper swiper-custom">
                     <div class="swiper-wrapper swiper-wrapper-custom">
@@ -527,19 +564,19 @@
             </section> 
             
             <script>
-const swiperCustom = new Swiper('.swiper-custom', {
-    loop: true,  
-    direction: 'horizontal', // تغيير الاتجاه إلى أفقي
-    slidesPerView: 1,
-    spaceBetween: 10,
-    mousewheel: true, // يمكنك إزالة هذا إذا كنت لا تريد التحكم بالعجلة
-    pagination: {
-        el: '.swiper-pagination-custom',
-        clickable: true,
-        dynamicBullets: true
-    }
-});
-            </script>
+                const swiperCustom = new Swiper('.swiper-custom', {
+                    loop: true,  
+                    direction: 'horizontal', // تغيير الاتجاه إلى أفقي
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    mousewheel: true, // يمكنك إزالة هذا إذا كنت لا تريد التحكم بالعجلة
+                    pagination: {
+                        el: '.swiper-pagination-custom',
+                        clickable: true,
+                        dynamicBullets: true
+                    }
+                });
+            </script> -->
 
 
 
@@ -576,13 +613,11 @@ const swiperCustom = new Swiper('.swiper-custom', {
 
 
 
-
-            <section class="About-SECTION overflow-hidden" id="About">
+            
+            <section class="About-SECTION overflow-hidden" id="About" >
                 <h2 class="text-center about-heading"><span class="highlight">About</span>Us</h2>
-                
-                
-               
-
+                <div class="flex justify-center aboutus" >
+                    
                 
                     <div class="grid grid-cols-3 gap-5 master-courses-container overflow-hidden" >
 
@@ -599,19 +634,19 @@ const swiperCustom = new Swiper('.swiper-custom', {
             
                         <div class="order-2">
                             <h4 class="abouhth4-heading">our services <img width="30" height="50" src="https://img.icons8.com/color/96/web.png" alt="web" style="display: inline-block;" /></h4>
-                            <p class="paragraph-effect">Front-end & Back-end Development, Database Management, and UI/UX Design for seamless digital solutions</p>
+                            <p class="paragraph-effect">Front-end, Back-end, Database, UI/UX for seamless solutions.</p>
                         </div>
 
                         <div class="order-3">
-                            <h4 class="abouhth4-heading">Pricing..</h4>
-                            <p class="paragraph-effect">Exclusive offers on web, mobile, and software engineering services – professionalism without limits!</p>
+                            <h4 class="abouhth4-heading">Pricing</h4>
+                            <p class="paragraph-effect">Exclusive offers on web, mobile & software services!</p>
                         </div>
 
 
                         <div class="order-6">
-                            <h4 class="abouhth4-heading justify-self-center">Our Team..  <img width="30" height="50" src="https://img.icons8.com/color/96/commercial-development-management.png" alt="commercial-development-management" style="display: inline-block;"/></h4>
-                            <p class="paragraph-effect">
-                                <div class="grid grid-cols-3 gap-2">
+                            <h4 class="abouhth4-heading justify-self-center">Our Team    <img width="30" height="50" src="https://img.icons8.com/color/96/commercial-development-management.png" alt="commercial-development-management" style="display: inline-block;"/></h4>
+                            <p class="paragraph-effect our-team-sec">
+                                <div class="grid grid-cols-3 gap-3">
                                    <h5 class="about-names" >FADi 3mad</h5>
                                    <h5 class="about-names">Marina Monsef</h5>
                                    <h5 class="about-names">Afedokya Ayman</h5>
@@ -634,54 +669,13 @@ const swiperCustom = new Swiper('.swiper-custom', {
 
                         <div class="order-5">
                             <h4 class="abouhth4-heading">Privacy && Policy</h4>
-                            <p class="paragraph-effect">We protect your data and use it only to improve our services without sharing it with any third party. By using our services, you agree to our policy to ensure a secure experience</p>
+                            <p class="paragraph-effect">We protect your data, improve services, never share, and ensure security.</p>
  
                         </div>
             
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    
-            
-                
-
-
-
-
-
-
-
+                </div>
             </section> 
-
-
-
 
 
 
@@ -820,6 +814,7 @@ const swiperCustom = new Swiper('.swiper-custom', {
 
 
 
+    
 
 
 
@@ -841,69 +836,80 @@ const swiperCustom = new Swiper('.swiper-custom', {
 
 
     </div>
+    <div class="outfooter">
+        <div class="max-w-[1200px] all-code-container overflow-hidden">
 
 
 
 
-
-
-
-
-    <footer class="con">
-        <div class="containers">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>TEAM</h4>
-                    <ul>
-                        <li><a href="#About">about us</a></li>
-                        <li><a href="#About">our services</a></li>
-                        <li><a href="#About">privacy policy</a></li>
-                        <li><a href="#About">pricing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>SUPPORT</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">courses</a></li>
-                        <li><a href="#">teachers</a></li>
-                        <li><a href="#">contact us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>FEATURES</h4>
-                    <ul>
-                        <li><a href="#">chatbot</a></li>
-                        <li><a href="#">to do list</a></li>
-                        <li><a href="#">tests</a></li>
-                        <li><a href="#">problem solving</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href=""><img src="Features" alt="">
-                        
-                        
-                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/>
-                            
-                        
-                        </a>
-                        <a href="#">
-                            <img width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/facebook-new.png" alt="facebook-new"/>
-
-                        </a>
-                        <a href="#">
-
-                            <img width="96" height="96" src="https://img.icons8.com/color/96/linkedin-circled--v1.png" alt="linkedin-circled--v1"/>
-                        </a>
-                        <a href="#">
-                            <img width="40" height="40" src="https://img.icons8.com/office/40/whatsapp--v1.png" alt="whatsapp--v1"/>
+            <footer class="con">
+                <div class="containers">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>TEAM</h4>
+                            <ul>
+                                <li><a href="#About">about us</a></li>
+                                <li><a href="#About">our services</a></li>
+                                <li><a href="#About">privacy policy</a></li>
+                                <li><a href="#About">pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>SUPPORT</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">courses</a></li>
+                                <li><a href="#">teachers</a></li>
+                                <li><a href="#">contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>FEATURES</h4>
+                            <ul>
+                                <li><a href="#">chatbot</a></li>
+                                <li><a href="#">to do list</a></li>
+                                <li><a href="#">tests</a></li>
+                                <li><a href="#">problem solving</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href=""><img src="Features" alt="">
+                                
+                                
+                                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/>
+                                    
+                                
+                                </a>
+                                <a href="#">
+                                    <img width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/facebook-new.png" alt="facebook-new"/>
+        
+                                </a>
+                                <a href="#">
+        
+                                    <img width="96" height="96" src="https://img.icons8.com/color/96/linkedin-circled--v1.png" alt="linkedin-circled--v1"/>
+                                </a>
+                                <a href="#">
+                                    <img width="40" height="40" src="https://img.icons8.com/office/40/whatsapp--v1.png" alt="whatsapp--v1"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </footer>
         </div>
-    </footer>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
 
 
 

@@ -40,8 +40,8 @@ h4 {
 
 }
 h5 {
-    font-size: clamp(18px, 2.5vw, 24px);
-    letter-spacing: -2px;
+    font-size: clamp(12px, 2.5vw, 18px);
+    letter-spacing: -1px;
 }
 
 p {
@@ -83,6 +83,10 @@ ul{
     color: #cfcfcf; 
     letter-spacing: 1px;
     line-height: 1.3;
+ 
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2), 
+                 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
 
@@ -188,7 +192,6 @@ ul{
     margin-bottom: 150px;
     width: 100%;
     border-bottom: 1px solid #A9A9A9;
-    box-shadow: 0 10px 0px rgba(100, 149, 242, 0.05); 
     backdrop-filter: blur(50px); 
 }  
 #menu-btn{
@@ -284,7 +287,7 @@ ul{
 /*-----HERO SECTION-----*/
 
 .HERO-DESKTOP-SECTION{
-    margin-bottom: 120px;
+    margin-bottom: 135px;
     display: block;
 }
 .hero-main-selection,.hero-main-selection:focus{
@@ -372,7 +375,7 @@ margin-top: 15px;
 
 /* MASTER COURSES GRID  */
 .MASTER-COURSES-SECTION{
-    margin-top: 250px;
+    margin-top: 200px;
     margin-bottom: 300px;
 
 }
@@ -453,16 +456,30 @@ margin-top: 15px;
 
 .about-linee{
     width: 80px;
-    height: 8px;
+    height: 5px;
     background: linear-gradient(to right, #1F5EFF, #B986DD);
 }
 .about-names{
+   
     margin: 1px;
     letter-spacing: 0px;
     font-size: 12px;
+    font-weight: 300;
+    color: #f5f5f5;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                 0 0 10px rgba(255, 255, 255, 0.5);
+                 transition: all 0.3s ease;
 }
-
-
+.our-team-sec{
+    margin-top: 15px;
+}
+.about-names:hover{
+    padding-left: 10px;
+    cursor:pointer;
+}
+.aboutus{
+    padding: 30px 60px;
+}
 
 
 .w{
@@ -558,10 +575,13 @@ margin-top: 15px;
 
 
 /*-----FOOTER SECTION-----*/
-
+.outfooter{
+    background-color: black;
+    margin-top: 200px;
+}
 
 .con{
-    margin-top: 300px;
+    margin-top: 30px;
     background-color: black;
     padding: 15px;
     padding-top: 50px;
@@ -591,7 +611,7 @@ margin-top: 15px;
     left:0;
     bottom: -10px;
     background-color: #e91e63;
-    height: 2px;
+    height: 1px;
     box-sizing: border-box;
     width: 50px;
 }
@@ -660,4 +680,47 @@ margin-top: 15px;
 
 
 
+.faq-container {
+    max-width: 70%;
+    margin: auto;
+}
+.faq-item {
 
+  
+
+
+
+  
+
+
+   
+
+
+
+
+
+    border: #0c2666 solid 2px;
+    justify-items: center;
+    background-color: rgba(33, 37, 41, 0.3); 
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+
+
+
+
+
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+}
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #bbb;
+}
