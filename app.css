@@ -454,8 +454,7 @@ margin-top: 15px;
 @media(max-width: 450px){
     .feature-imgs{
         width: 100%;
-        max-width: 270px;
-
+        max-width: 250px;
     }
 }
 
