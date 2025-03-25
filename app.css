@@ -116,7 +116,17 @@ ul{
     transform: translateY(-3px) scale(1.07);
 }
 
-
+.btn-axon{
+    padding: 4px 10px;
+    border: solid linear-gradient(to right, #1F5EFF, #B986DD) 1px;
+    background: linear-gradient(to right, #1F5EFF, #B986DD); 
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-axon:hover{
+    box-shadow: 0px 1px 5px rgba(31, 94, 255, 1); 
+    transform: scale(1.05);
+}
 
 .scrollbtndiv {
     text-align: right; 
@@ -326,15 +336,17 @@ ul{
 
 /*-----Work with SECTION-----*/
 .Work-with-section{
-    margin-top: 130px;
+    margin-top: 100px;
     margin-bottom: 220px;
+
 
 
 
 }
 
 .work-con{
-    gap: 50px;   
+    gap: 50px;
+    margin: 20px;   
 }
 .work-with-heading{
     margin-bottom: 100px;
@@ -513,8 +525,11 @@ margin-top: 15px;
     font-size: 24px; /* حجم صغير */
     opacity: 0.5; /* شفافية إضافية */
     transition: opacity 0.3s ease-in-out; 
+    margin-bottom: 50px;
  
 }
+
+
 
 .feat-para:hover {
     opacity: 1;
@@ -658,6 +673,52 @@ margin-top: 15px;
 
 
 
+.courses {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course {
+    position: relative;
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+/* تصميم الطبقة الشفافة */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* لون داكن شفاف */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    opacity: 0; /* مخفي افتراضياً */
+    transition: opacity 0.3s;
+}
+
+/* إظهار الطبقة عند تحريك الماوس */
+.course:hover .overlay {
+    opacity: 1;
+}
 
 
 
