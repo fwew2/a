@@ -270,7 +270,7 @@ ul{
 #menu-btn.active {
     transform: rotate(90deg);
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     .navelements {
          display: none;
      }
@@ -309,6 +309,8 @@ ul{
     margin-top: 45px;
     text-align: center;
 }
+
+
 .MOBILE-HERO-SECTION{
     display: none;
 }
@@ -322,11 +324,47 @@ ul{
      }
  }
 
+/*-----Work with SECTION-----*/
+.Work-with-section{
+    margin-top: 150px;
+    margin-bottom: 800px;
 
 
 
 
+}
 
+.work-con{
+    gap: 50px;   
+}
+.work-with-heading{
+    margin-bottom: 100px;
+}
+
+.work-imgs{
+    max-width: 100px;
+    width: 100%;
+}
+
+.d{
+    margin-top: 20px;
+    height: 100px;
+    max-width: 100px;
+    width: 100%;
+}
+@media (max-width: 500px) {
+.work-con{
+    .work-con {
+        flex-direction: column;
+    }
+
+    .work-con > div {
+        flex: 1 1 100%; /* كل عنصر يأخذ العرض الكامل */
+        max-width: 100%;
+    }
+    
+}
+ }
 /*-----SERVICES SECTION-----*/
 .SERVICES-DESKTOP-SECTION{
     margin-bottom: 250px;
@@ -362,7 +400,7 @@ margin-top: 15px;
     margin-top: 190px;
     margin-bottom: 300px;
 }
-@media (max-width: 750px) {
+@media (max-width: 850px) {
     .SERVICES-PHONE-SECTION{
         display: block;
      }
@@ -527,6 +565,11 @@ margin-top: 15px;
  
 }
 
+
+
+
+
+
 .swiper-slide-custom {
     display: flex;
     align-items: center;
@@ -534,6 +577,28 @@ margin-top: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
