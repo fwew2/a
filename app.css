@@ -326,9 +326,8 @@ ul{
 
 /*-----Work with SECTION-----*/
 .Work-with-section{
-    margin-top: 150px;
-    margin-bottom: 800px;
-
+    margin-top: 130px;
+    margin-bottom: 220px;
 
 
 
@@ -344,10 +343,11 @@ ul{
 .work-imgs{
     max-width: 100px;
     width: 100%;
+    cursor: pointer;
 }
 
 .d{
-    margin-top: 20px;
+    margin-top: 10px;
     height: 100px;
     max-width: 100px;
     width: 100%;
