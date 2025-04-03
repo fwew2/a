@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> login & register </title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/auth.css">
+
+
+
+</head>
+<body>
+
+    <div class="all-code-container">
+
+
+
+        <div class="Log-in-box" id="Log-in-box">
+            <h2 class="Heading"><span class="highlight">Log</span>in</h2>
+
+            <div class="container">
+                <form class="box" action="" method="post">
+                    <h4 class="box-heading">Login to your account</h4>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                    <button type="submit">Login Now</button>
+
+
+                    <p class="paragraph-effect" style="margin-bottom: 20px; margin-top: 20px;">Don’t have an account? 
+                        <a href="#" id="Signup-btn">Create an account</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="Sign-up-box" id="Sign-up-box"> 
+
+            <h2 class="Heading"><span class="highlight">Sign</span>Up</h2>
+
+            <div class="container">
+                <form class="box" action="" method="post">
+                    <h4 class="box-heading"> Creat an account</h4>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" required>
+                    
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" required>
+                   
+                  
+                    <label for="email-signup">Email</label>
+                    <input type="email" id="email-signup" name="email" placeholder="Enter your email" required>
+
+                    <label for="password-signup">Password</label>
+                    <input type="password" id="password-signup" name="password" placeholder="Enter your password" required>
+
+                    <button type="submit"> Creat an account</button>
+
+             
+                    <p class="paragraph-effect" style="margin-bottom: 20px; margin-top: 20px;">   Already have an account ?
+                        <a href="#" id="login-btn">Log in</a>
+                    </p>
+                </form>
+            </div>
+        </div> 
+
+        <script>
+        
+            function view(){
+                let Value = localStorage.getItem("Value");
+
+                if(Value=="login"){
+                document.getElementById("Log-in-box").style.display="block";
+                
+                }
+                else{
+                    document.getElementById("Log-in-box").style.display="none";
+                    document.getElementById("Sign-up-box").style.display="block";
+                }
+            }
+            view();
+
+
+            let loginbtn=document.getElementById("login-btn");
+            loginbtn.addEventListener("click",function(){
+                document.getElementById("Log-in-box").style.display="block";
+                document.getElementById("Sign-up-box").style.display="none";
+            })
+
+            let Signupbtn=document.getElementById("Signup-btn");
+            Signupbtn.addEventListener("click",function(){
+                document.getElementById("Log-in-box").style.display="none";
+                document.getElementById("Sign-up-box").style.display="block";
+            })
+
+            
+    
+        </script>
+
+
+
+
+
+       
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

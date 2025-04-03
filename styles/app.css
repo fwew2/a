@@ -1,0 +1,443 @@
+/*----------------------------- SECTIONS ----------------------------- */
+/*-----HERO SECTION-----*/
+.HERO-DESKTOP-SECTION{
+    margin-bottom: 135px;
+    display: block;
+}
+.hero-main-selection,.hero-main-selection:focus{
+    display: inline-block;
+    max-width: 800px;
+    width: 100%;
+    height: 40px;
+    background-color: #2A2F3B;
+    border: solid #1F5EFF 2px;
+    border-radius: 8px;
+    color: whitesmoke;
+    padding-left: 5px;
+    font-size: 16px;
+    outline: none; 
+    box-shadow: 0 0 10px 5px #0c2666;
+    margin-top: 45px;
+    text-align: center;
+}
+
+
+.MOBILE-HERO-SECTION{
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .HERO-DESKTOP-SECTION{
+        display: none;
+     }
+     .MOBILE-HERO-SECTION{
+        display: block;
+     }
+ }
+
+
+
+
+
+
+
+
+
+/*-----SERVICES SECTION-----*/
+.SERVICES-DESKTOP-SECTION{
+    margin-bottom: 250px;
+}
+
+.Services-headin{
+    letter-spacing: 0;
+}
+
+.hero-flex-items-img{
+  
+width: 30px;
+height: 30px;
+margin-top: 15px;
+}
+.hero-flex-items{
+   margin-top: 13px;
+}
+
+.line{
+    height: 80px;
+    border: #1F5EFF solid 0.5px; 
+    box-shadow: 0 0 10px 3px #0c2666;
+}
+
+.swiper-wrapper{
+    margin-bottom: 50px;
+}
+.SERVICES-PHONE-SECTION{
+    display: none;
+}
+.SERVICES-PHONE-SECTION{
+    margin-top: 190px;
+    margin-bottom: 300px;
+}
+@media (max-width: 850px) {
+    .SERVICES-PHONE-SECTION{
+        display: block;
+     }
+     .SERVICES-DESKTOP-SECTION{
+        display: none;
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+/*-----Work with SECTION-----*/
+.Work-with-section{
+    margin-top: 100px;
+    margin-bottom: 220px
+}
+.work-con{
+    gap: 50px;
+    margin: 20px;   
+}
+.work-with-heading{
+    margin-bottom: 100px;
+}
+
+.work-imgs{
+    max-width: 100px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.d{
+    margin-top: 10px;
+    height: 100px;
+    max-width: 100px;
+    width: 100%;
+}
+@media (max-width: 500px) {
+.work-con{
+    .work-con {
+        flex-direction: column;
+    }
+
+    .work-con > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+}
+}
+
+/* MASTER COURSES GRID  */
+.MASTER-COURSES-SECTION{
+    margin-top: 200px;
+    margin-bottom: 300px;
+
+}
+.MASTER-COURSES-HEADING{
+    margin-bottom: 170px;
+}
+.master-courses-element{
+    border: #0c2666 solid 2px;
+    justify-items: center;
+    background-color: rgba(33, 37, 41, 0.3); 
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 3px #0c2666;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.master-courses-title{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 0px;
+}
+.master-courses-status{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: clamp(12px, 2vw, 20px);
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+.master-courses-element:hover{
+    border: #0c2666 solid 2px;
+    justify-items: center;
+    background-color: rgba(33, 37, 41, 0.5); 
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px #0c2666;
+    transform: scale(1.05);
+ 
+
+}
+
+@media (max-width: 750px) {
+    .master-courses-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+@media (max-width: 585px) {
+    .master-courses-container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----FEATURES SECTION-----*/
+.feat-section{
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+.feature-imgs {
+    max-width: 350px;
+    width: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+@media(max-width: 450px){
+    .feature-imgs{
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+
+.feature-imgs:hover {
+    transform: scale(1.1) rotate(2deg);
+   
+}
+.feat-title{
+    margin: 50px 100px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feat-para {
+    color: rgba(255, 255, 255, 0.5); 
+    font-weight: 300; 
+    font-size: 24px; 
+    opacity: 0.5; 
+    transition: opacity 0.3s ease-in-out; 
+    margin-bottom: 50px;
+ 
+}
+
+
+.feat-para:hover {
+    opacity: 1;
+ 
+     color: rgba(255, 255, 255, 0.85);
+
+}
+
+.robot-container {
+    position: relative;
+    display: inline-block;
+}
+
+.robot-message {
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+}
+.swiper-custom {
+    width: 70%;
+    height: 800px;
+
+    border-radius: 50px;
+ 
+}
+.swiper-slide-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----ABOUT SECTION-----*/
+
+
+.about-heading{
+    margin-bottom: 120px;
+    margin-top: 300px;
+}
+.abouhth4-heading{
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    color: #D9D9D9;
+ 
+}
+
+.about-linee{
+    width: 80px;
+    height: 5px;
+    background: linear-gradient(to right, #1F5EFF, #B986DD);
+}
+.about-names{
+   
+    margin: 1px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #f5f5f5;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                 0 0 10px rgba(255, 255, 255, 0.5);
+                 transition: all 0.3s ease;
+}
+.our-team-sec{
+    margin-top: 15px;
+}
+.about-names:hover{
+    padding-left: 10px;
+    cursor:pointer;
+}
+.aboutus{
+    padding: 30px 60px;
+}
+
+.courses {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course {
+    position: relative;
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+/* تصميم الطبقة الشفافة */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* لون داكن شفاف */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    opacity: 0; /* مخفي افتراضياً */
+    transition: opacity 0.3s;
+}
+
+
+.course:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

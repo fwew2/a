@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/courses.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+   
+
+
+
+
+
+</head>
+<body>
+    <div class="all-code-container">
+        <header>
+            <!-- NAVBAR SECTION -->
+            <section class="NAVBR-SECTION" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <!-- NAVBAR -->
+                <nav class="navbar">
+
+                    <!-- Logo -->
+                    <a href="index.html"><img class="main-logo" src="assets/Card elements04.png" alt="Logo"></a>
+
+                    <!-- Desktop nav -->
+                    <ul class=" navelements desktopnav">
+                        <li><a href="index.html" class="links" >Home</a></li>
+                        <li><a href="courses.html" class="links">Courses</a></li>
+                        <li><a href="" class="links">Community</a></li>
+                        <li><a href="#About" class="links">About</a></li>
+                        <li><a href="" class="links">Contact</a></li>
+                    </ul>
+
+                    <ul class="navelements nav-butns desktopnav">
+                        <li><a href="Auth.html" class="btn-outline"  id="login-desktop-btn">Login</a></li>
+                        <li><a href="Auth.html" class="btn-primary" id="Sign-desktop-btn">Register</a></li>
+                    </ul>
+
+                    <!-- Mobile nav -->
+                    <button id="menu-btn" class="text-white" style="color: whitesmoke;">☰</button>
+
+                    <div id="mobile-menu">
+                        <ul>
+                            <li><a href="#" class="mobile-link">Home</a></li>
+                            <li><a href="" class="links">Courses</a></li>
+                            <li><a href="#" class="mobile-link">Community</a></li>
+                            <li><a href="#About" class="mobile-link">About</a></li>
+                            <li><a href="#" class="mobile-link">Contact</a></li>
+                            <li><a href="#" class="mobile-link">Login</a></li>
+                            <li><a href="#" class="mobile-link">Register</a></li>
+                        </ul>  
+                    </div>
+                </nav>
+            </section>
+
+            <script>
+                document.getElementById("login-desktop-btn").addEventListener("click", function() {
+                    localStorage.setItem("Value", "login");
+                });
+
+                document.getElementById("Sign-desktop-btn").addEventListener("click", function() {
+                    localStorage.setItem("Value", "Signup");
+                });
+            </script>
+
+
+
+        </header>
+
+        <main>
+            <!-- <h2 class="title">Sophomore Courses</h2>
+            <p class="subtitle"> <img class="icon" src="assets/vector.png"> Here is your course</p>
+             -->
+            <div class="container">
+
+                <aside class="sidebar">
+                    <ul class="menu">
+                        <li class="menu-item"> <img class="icon" src="assets/vector.png"><a href="">Courses</a></li>
+                        <li class="menu-item"> <img class="icon" src="assets/todo.png"><a href="">To-Do List</a></li>
+                        <li class="menu-item"> <img class="icon" src="assets/test.png"><a href=""> Tests</a></li>
+                        <li class="menu-item"> <img class="icon" src="assets/problem-solving.png"><a href=""> Problem Solving</a></li>
+                    </ul>
+                    <p class="logout"> <img class="icon" src="assets/logout.png"><a href="">Logout</a></p>
+                </aside>
+
+                <div>
+                    <span class="aside-line"></span>
+                </div>
+              
+
+                <section class="courses-grid">
+                    <div class="course-card"> 
+                        <img class="w" width="96" height="96" src="assets/datastruct.png"> 
+                        <h4 class="courses-title">Data Structure</h4>
+                        <p class="paragraph-effect">TCS Campus Drive-2023</p>
+                        <p class="paragraph-effect small-p">With Dr. Nahla</p>
+                    </div>
+                    <div class="course-card"> 
+                        <img class="w" width="96" height="96" src="assets/distributed-dbms.svg"> 
+                        <h4 class="courses-title">Database</h4>
+                        <p class="paragraph-effect">TCS Campus Drive-2023</p>
+                        <p class="paragraph-effect small-p">With Dr. Emad</p>
+                    </div>
+                    <div class="course-card"> 
+                        <img class="w" width="96" height="96" src="assets/web.png"> 
+                        <h4 class="courses-title">Web</h4>
+                        <p class="paragraph-effect">TCS Campus Drive-2023</p>
+                        <p class="paragraph-effect small-p">With Dr. Amal</p>
+                    </div>
+                    <div class="course-card"> 
+                        <img class="w" width="96" height="96" src="assets/ph.png"> 
+                        <h4 class="courses-title">Physics</h4>
+                        <p class="paragraph-effect">MTSL Campus Drive-2023</p>
+                        <p class="paragraph-effect small-p">With Dr. Badry</p>
+                    </div>
+                    <div class="course-card"> 
+                        <img class="w" width="96" height="96" src="assets/ds.png"> 
+                        <h4 class="">Parallel Programming</h4>
+                        <p class="paragraph-effect">MTSL Campus Drive-2023</p>
+                        <p class="paragraph-effect small-p">With Dr. Hamam</p>
+                    </div>
+                    <div class="course-card"> 
+                        <img class="w" width="96" height="96" src="assets/mo.png"> 
+                        <h4 class="courses-title">Model&Simulat</h4>
+                        <p class="paragraph-effect">MTSL Campus Drive-2023</p>
+                        <p class="paragraph-effect small-p">With Dr. Sara</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script >
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+    
+        menuBtn.addEventListener("click", function () {
+            mobileMenu.classList.toggle("active");
+            menuBtn.classList.toggle("active");
+        });
+    });
+    </script>
+</body>
+</html>

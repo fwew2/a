@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- TAIILWIND && CSS -->
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/components.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
    <!--SWIPER LIBRARY  -->
@@ -24,39 +24,34 @@
     <!-- TITLE && ICON-->
     <title>Home</title>
     <link rel="icon" type="ico" href="assets/Card elements04.png">
-
 </head>
 <body>
-    
-    <div class="max-w-[1200px] all-code-container overflow-hidden">
+    <div class="all-code-container">
         <header>
             <!-- NAVBAR SECTION -->
-            <section class="NAVBR-SECTION"
-            data-aos="fade-up"
-             data-aos-anchor-placement="top-bottom"
-            >
+            <section class="NAVBR-SECTION" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <!-- NAVBAR -->
-                <nav class="flex justify-between items-center navbar">
+                <nav class="navbar">
 
                     <!-- Logo -->
-                    <a href="index.html"><img class="w-24" src="assets/Card elements04.png" alt="Logo"></a>
+                    <a href="index.html"><img class="main-logo" src="assets/Card elements04.png" alt="Logo"></a>
 
                     <!-- Desktop nav -->
-                    <ul class="flex  gap-4 navelements">
-                        <li><a href="" class="links">Home</a></li>
-                        <li><a href="" class="links">Courses</a></li>
+                    <ul class=" navelements desktopnav">
+                        <li><a href="index.html" class="links" >Home</a></li>
+                        <li><a href="courses.html" class="links">Courses</a></li>
                         <li><a href="" class="links">Community</a></li>
                         <li><a href="#About" class="links">About</a></li>
                         <li><a href="" class="links">Contact</a></li>
                     </ul>
-        
-                    <ul class="flex gap-4 navelements nav-butns">
-                        <li><a href="" class="btn-outline">Login</a></li>
-                        <li><a href="" class="btn-primary">Register</a></li>
+
+                    <ul class="navelements nav-butns desktopnav">
+                        <li><a href="Auth.html" class="btn-outline"  id="login-desktop-btn">Login</a></li>
+                        <li><a href="Auth.html" class="btn-primary" id="Sign-desktop-btn">Register</a></li>
                     </ul>
-    
+
                     <!-- Mobile nav -->
-                    <button id="menu-btn" class="text-white text-4xl">☰</button>
+                    <button id="menu-btn" class="text-white">☰</button>
 
                     <div id="mobile-menu">
                         <ul>
@@ -69,12 +64,18 @@
                             <li><a href="#" class="mobile-link">Register</a></li>
                         </ul>  
                     </div>
-
-                  
                 </nav>
             </section>
 
+            <script>
+                document.getElementById("login-desktop-btn").addEventListener("click", function() {
+                    localStorage.setItem("Value", "login");
+                });
 
+                document.getElementById("Sign-desktop-btn").addEventListener("click", function() {
+                    localStorage.setItem("Value", "Signup");
+                });
+            </script>
 
 
 
@@ -91,22 +92,16 @@
                         <!-- first element -->
                         <div class="col-span-2">
                             <!-- Main Heading -->
-                            <h1 class=""
-                            data-aos="fade-right"
-                            >
+                            <h1 class="" data-aos="fade-right">
                                 <span class="highlight">Navigate</span> Your Learning <br>
                                 <span class="">Journey!</span>
                             </h1>
-                            <!-- Main paragraph -->
 
-                            <p  class="mt-40 block self-start paragraph-effect" id="main-para"
-                            data-aos="fade-right"
-                            ></p>
+                            <!-- Main paragraph -->
+                            <p  class="mt-40 block self-start paragraph-effect" id="main-para" data-aos="fade-right"></p>
+
                             <!-- SELECTION -->
-                            <select class="hero-main-selection " name="" id=""
-                            data-aos="fade-right"
-                            data-aos-duration="3000"
-                            >
+                            <select class="hero-main-selection " name="" id="" data-aos="fade-right" data-aos-duration="300">
                                 <option value="">Freshman</option>
                                 <option value="">Sophomore</option>
                                 <option value="">Junior</option>
@@ -118,10 +113,7 @@
 
 
                         <!-- SECOND element -->
-                        <img class="hmax-w-px w-full" src="assets/Mask group.png" alt=""
-                        data-aos="fade-left"
-                        data-aos-duration="3000"
-                        >
+                        <img class="hmax-w-px w-full" src="assets/Mask group.png" alt="" data-aos="fade-left" data-aos-duration="300">
                     </div>
                 </section>
 
@@ -130,33 +122,25 @@
 
                 <!-- MOBILE-HERO-SECTION -->
                 <section class="MOBILE-HERO-SECTION">
-                    <div class="grid grid-cols-1 justify-items-center"
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="center-bottom"
-                    >
+                    <div class="grid grid-cols-1 justify-items-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
 
                         <!-- first element -->
-                        <div class="text-center"
-                        data-aos="fade-right"
-                        data-aos-duration="3000"
-                        >
-
+                        <div class="text-center" data-aos="fade-right" data-aos-duration="300">
                             <img class="max-w-[800px] w-full" src="assets/Mask group.png" alt="">
-
                         </div>
+
                         <!-- SECOND element -->
                         <div class="text-center">
                             <!-- Main Heading -->
                             <h1 class="text-center">
-                                <span class="highlight ">Navigate</span> Your Learning <br>
+                                <span class="highlight">Navigate</span> Your Learning <br>
                                 <span class="">Journey!</span>
                             </h1>
                             <!-- Main paragraph -->
                             <p  class="mt-40 block self-start paragraph-effect" id="main-para"></p>
                             <!-- SELECTION -->
-                            <select class="hero-main-selection " name="" id=""
-                            >
+                            <select class="hero-main-selection " name="" id="">
                                 <option value="">Freshman</option>
                                 <option value="">Sophomore</option>
                                 <option value="">Junior</option>
@@ -171,47 +155,42 @@
 
 
             <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        const text = "First AI-powered website by SVNU CS <br> students to make studying easier for students at any level!";
-                        
-                        const paragraphs = document.querySelectorAll("#main-para"); // جلب كل العناصر التي تحمل id="main-para"
-                        
-                        paragraphs.forEach(paragraph => {
-                            let index = 0;
-                            let isTyping = false; // منع إعادة التأثير عند السكرول المتكرر
+                document.addEventListener("DOMContentLoaded", function () {
+                    const text = "First AI-powered website by SVNU CS <br> students to make studying easier for students at any level!";
+                    
+                    const paragraphs = document.querySelectorAll("#main-para"); 
+                    
+                    paragraphs.forEach(paragraph => {
+                        let index = 0;
+                        let isTyping = false; 
 
-                            function type() {
-                                if (index < text.length) {
-                                    if (text.substring(index, index + 4) === "<br>") {
-                                        paragraph.innerHTML += "<br>";
-                                        index += 4;
-                                    } else {
-                                        paragraph.innerHTML += text[index];
-                                        index++;
-                                    }
-                                    setTimeout(type,35);
+                        function type() {
+                            if (index < text.length) {
+                                if (text.substring(index, index + 4) === "<br>") {
+                                    paragraph.innerHTML += "<br>";
+                                    index += 4;
                                 } else {
-                                    paragraph.style.opacity = "1";
+                                    paragraph.innerHTML += text[index];
+                                    index++;
                                 }
+                                setTimeout(type,35);
+                            } else {
+                                paragraph.style.opacity = "1";
                             }
+                        }
 
-                            const observer = new IntersectionObserver(entries => {
-                                entries.forEach(entry => {
-                                    if (entry.isIntersecting && !isTyping) {
-                                        isTyping = true;
-                                        type();
-                                    }
-                                });
-                            }, { threshold: 0.5 });
+                        const observer = new IntersectionObserver(entries => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting && !isTyping) {
+                                    isTyping = true;
+                                    type();
+                                }
+                            });
+                        }, { threshold: 0.5 });
 
-                            observer.observe(paragraph);
-                        });
+                        observer.observe(paragraph);
                     });
-
-
-
-
-
+                });
             </script>
 
 
@@ -227,6 +206,7 @@
                         <div>
                             <h5 class="Services-headin">Explore topics</h5>
                             <p>Explore,and grow with us!</p>
+                            <p class="paragraph-effect text-center small-p"><a href="">explore from here</a></p>
                         </div>
                     </div>
                     <!-- ELEMENT 3 -->
@@ -240,6 +220,7 @@
                         <div>
                             <h5 class="Services-headin">Join our community</h5>
                             <p>Join, connect, and thrive!</p>
+                            <p class="paragraph-effect text-center small-p"><a href="">join from here</a></p>
                         </div>
                     </div>
             
@@ -253,6 +234,7 @@
                         <div>
                             <h5 class="Services-headin">Smart AI Helper!</h5>
                             <p>Your intelligent study assistant!</p>
+                            <p class="paragraph-effect text-center small-p"><a href="">try it from here</a></p>
                         </div>
                     </div>
                 </div>
@@ -313,36 +295,33 @@
 
 
 
+
             <script>
                 const swiper = new Swiper(".mySwiper", {
-                loop: true,            // تشغيل السلايدر بشكل دائري
-                navigation: {          // أزرار التنقل
+                loop: true,            
+                navigation: {    
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
-                pagination: {          // النقاط السفلية
+                pagination: {     
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                autoplay: {            // تشغيل تلقائي
+                autoplay: {      
                     delay: 3000,
                     disableOnInteraction: false,
                 },
                 });
             </script>
             
+
+
         </header>
 
 
 
 
         
-
-
-
-
-
-
 
 
         <!-- SCROLL BTN SECTOIN-->
@@ -410,7 +389,7 @@
 
 
         <main>
-
+            <!-- Work with section -->
             <section class="Work-with-section text-center">
                 <h2 class="work-with-heading" data-aos="fade-down-right"><span class="highlight "> We collaborate</span> with various website APIs to create a smarter and more advanced learning journey!</h2>
                 <div class="flex justify-around flex-wrap work-con">
@@ -434,8 +413,6 @@
                     </a>
                   
                 </div>
-
-
             </section>
 
 
@@ -488,9 +465,7 @@
 
 
 
-            <section class="MASTER-COURSES-SECTION text-center"
-            data-aos="zoom-in-up"
-            >
+            <section class="MASTER-COURSES-SECTION text-center" data-aos="zoom-in-up">
                 <h2 class="MASTER-COURSES-HEADING"
                 data-aos="fade-right"
                 data-aos-offset="300"
@@ -511,7 +486,7 @@
 
                         <div class="master-courses-element" >
                             <img class="w" width="96" height="96" src="https://img.icons8.com/nolan/96/laravel.png" alt="laravel"/>
-                            <h4 class="master-courses-title">Master Laravl</h4>
+                            <h4 class="master-courses-title">Master Laravel</h4>
                             <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
                         </div>
                         

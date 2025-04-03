@@ -1,0 +1,60 @@
+
+.Heading{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.Log-in-box{
+    margin-top: 50px;
+    display: block;
+}
+.Sign-up-box{
+    margin-top: 20px;
+    display: none;
+}
+.box-heading{
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+   
+}
+.box {
+    border: #0c2666 solid 2px;
+    justify-items: center;
+    background-color: rgba(33, 37, 41, 0.3); 
+    padding: 10px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 3px #0c2666;
+    margin: 0px 10px;
+    max-width: 600px;
+    width: 100%;
+}
+input, button {
+  
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none; 
+}
+
+input {
+    background: #333;
+    color: white;
+    
+}
+button {
+    background-color: #2979ff;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1c54b2;
+}
+
+
+
+
