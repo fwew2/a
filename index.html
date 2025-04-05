@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/components.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-   <!--SWIPER LIBRARY  -->
+    <!--SWIPER LIBRARY  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -27,6 +27,8 @@
 </head>
 <body>
     <div class="all-code-container">
+
+
         <header>
             <!-- NAVBAR SECTION -->
             <section class="NAVBR-SECTION" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -55,28 +57,33 @@
 
                     <div id="mobile-menu">
                         <ul>
-                            <li><a href="#" class="mobile-link">Home</a></li>
-                            <li><a href="" class="links">Courses</a></li>
+                            <li><a href="index.html" class="mobile-link">Home</a></li>
+                            <li><a href="courses.html" class="links">Courses</a></li>
                             <li><a href="#" class="mobile-link">Community</a></li>
                             <li><a href="#About" class="mobile-link">About</a></li>
                             <li><a href="#" class="mobile-link">Contact</a></li>
-                            <li><a href="#" class="mobile-link">Login</a></li>
-                            <li><a href="#" class="mobile-link">Register</a></li>
+                            <li><a href="Auth.html" class="mobile-link" id="login-mobile-btn">Login</a></li>
+                            <li><a href="Auth.html" class="mobile-link" id="Sign-mobile-btn">Register</a></li>
                         </ul>  
                     </div>
                 </nav>
             </section>
-
             <script>
                 document.getElementById("login-desktop-btn").addEventListener("click", function() {
+                    localStorage.setItem("Value", "login");
+                });
+                document.getElementById("login-mobile-btn").addEventListener("click", function() {
                     localStorage.setItem("Value", "login");
                 });
 
                 document.getElementById("Sign-desktop-btn").addEventListener("click", function() {
                     localStorage.setItem("Value", "Signup");
                 });
+                document.getElementById("Sign-mobile-btn").addEventListener("click", function() {
+                    localStorage.setItem("Value", "Signup");
+                });
             </script>
-
+            <!-- END NAVBAR SECTION -->
 
 
 
@@ -152,8 +159,6 @@
                     </div>
                 </section>
             </section>
-
-
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                     const text = "First AI-powered website by SVNU CS <br> students to make studying easier for students at any level!";
@@ -192,7 +197,6 @@
                     });
                 });
             </script>
-
 
             <!-- Desktop SERVICES SECTION -->
             <section class="SERVICES-DESKTOP-SECTION "
@@ -292,10 +296,6 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </section>
-
-
-
-
             <script>
                 const swiper = new Swiper(".mySwiper", {
                 loop: true,            
@@ -319,73 +319,12 @@
         </header>
 
 
-
-
-        
-
-
         <!-- SCROLL BTN SECTOIN-->
         <section>
             <div class="scrollbtndiv">
                 <img id="scrollbtn" src="assets/arrow-left.png" alt="">
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         <main>
@@ -416,55 +355,7 @@
             </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <!--Master courses grid  -->
             <section class="MASTER-COURSES-SECTION text-center" data-aos="zoom-in-up">
                 <h2 class="MASTER-COURSES-HEADING"
                 data-aos="fade-right"
@@ -487,39 +378,39 @@
                         <div class="master-courses-element" >
                             <img class="w" width="96" height="96" src="https://img.icons8.com/nolan/96/laravel.png" alt="laravel"/>
                             <h4 class="master-courses-title">Master Laravel</h4>
-                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
                         </div>
                         
                         <div class="master-courses-element">
                             <img class="w"  width="100" height="100" src="https://img.icons8.com/plasticine/100/react.png" alt="react"/>
                             <h4 class="master-courses-title">Master React</h4>
-                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
                         </div>
             
                         <div class="master-courses-element">
                             <img class="w"  width="96" height="96" src="https://img.icons8.com/color/96/nuxt-jc.png" alt="nuxt-jc"/>
                             <h4 class="master-courses-title">Master Vue js</h4>
-                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
                         </div>
 
                         <div class="master-courses-element">
                             <img class="w"  width="96" height="96" src="https://img.icons8.com/nolan/96/sass.png" alt="sass"/>
                             <h4 class="master-courses-title">Master Sass</h4>
-                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
                         </div>
 
 
                         <div class="master-courses-element">
                             <img class="w"  width="96" height="96" src="https://img.icons8.com/fluency/96/node-js.png" alt="node-js"/> 
                             <h4 class="master-courses-title">Master Node js</h4>
-                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
                         </div>
 
 
                         <div class="master-courses-element">
                             <img class="w"  width="96" height="96" src="https://img.icons8.com/color/96/net-framework.png" alt="net-framework"/>
                             <h4 class="master-courses-title">Master .net</h4>
-                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2023</p>
+                            <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
                         </div>
             
                     </div>
@@ -527,7 +418,16 @@
                 </div>
 
             </section>
-            
+            <script>
+                let course=document.querySelectorAll(".master-courses-element");
+                console.log(course);
+
+                for(let i=0;i<course.length;i++){
+                    course[i].addEventListener("click",function(){
+                        window.location.href = "file:///C:/Users/FODA/Desktop/SVNUS%20CS/Auth.html";
+                    })
+                }
+            </script>
 
 
 
@@ -535,62 +435,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <!-- roboot   -->
             <section class="fea">
                 <div class="swiper-slide swiper-slide-custom text-center" >
 
@@ -648,212 +493,20 @@
 
 
 
-
             </script>
-
-
-
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </main>
 
 
 
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+
+
     <div class="outfooter">
-        <div class="max-w-[1200px] all-code-container overflow-hidden">
+        <div class="all-code-container">
             
+            <!-- About us -->
             <section class="About-SECTION overflow-hidden" id="About" 
             data-aos="fade-up"
             data-aos-duration="3000"
@@ -924,7 +577,7 @@
             </section> 
 
 
-
+            <!-- Footer -->
             <footer class="con">
                 <div class="containers">
                     <div class="row">
@@ -959,54 +612,34 @@
                             <h4>follow us</h4>
                             <div class="social-links">
                                 <a href=""><img src="Features" alt="">
-                                
-                                
                                     <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/>
-                                    
-                                
                                 </a>
                                 <a href="#">
                                     <img width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/facebook-new.png" alt="facebook-new"/>
-        
                                 </a>
                                 <a href="#">
-        
                                     <img width="96" height="96" src="https://img.icons8.com/color/96/linkedin-circled--v1.png" alt="linkedin-circled--v1"/>
                                 </a>
                                 <a href="#">
                                     <img width="40" height="40" src="https://img.icons8.com/office/40/whatsapp--v1.png" alt="whatsapp--v1"/>
+                                </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </footer>
+
         </div>
-
-
-
-
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="main.js"></script>
-    
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
 </body>
 </html>      
 

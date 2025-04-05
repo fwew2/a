@@ -190,8 +190,13 @@ label{
 
 
 
+.profile-img{
+    width: 2rem;
 
-
+}
+.profile-img:hover{
+    transform: scale(1.1);
+}
 
 
 
@@ -211,9 +216,9 @@ label{
 .NAVBR-SECTION{
     margin-bottom: 150px;
     width: 100%;
-    border-bottom: 1px solid #A9A9A9;
+    border-bottom: 1px solid #333333;
     backdrop-filter: blur(50px); 
-
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
 }  
 .navbar{
     display: flex;
