@@ -174,17 +174,17 @@ margin-top: 15px;
     border-radius: 10px;
     box-shadow: 0 0 20px 5px #0c2666;
     transform: scale(1.05);
-    cursor: pointer;
+    cursor:default;
 
 }
 
-@media (max-width: 750px) {
+@media (max-width: 685px) {
     .master-courses-container {
       grid-template-columns: repeat(2, 1fr);
     }
 }
   
-@media (max-width: 585px) {
+@media (max-width: 500px) {
     .master-courses-container {
         grid-template-columns: repeat(1, 1fr);
       }
@@ -202,13 +202,13 @@ margin-top: 15px;
 
 
 
-/*-----FEATURES SECTION-----*/
-.feat-section{
+/*-----roboot_section-----*/
+.roboot_section{
     margin-top: 250px;
     margin-bottom: 250px;
 }
 .feature-imgs {
-    max-width: 350px;
+    max-width: 250px;
     width: 100%;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 
@@ -216,15 +216,129 @@ margin-top: 15px;
 @media(max-width: 450px){
     .feature-imgs{
         width: 100%;
-        max-width: 250px;
+        max-width: 150px;
     }
+    .send-btn{
+        margin: 5px;
+        
+    }
+    .chat-header p {
+        font-size: 10px;
+    }
+    
+
+
+    
+
+
+}
+.send-btn{
+    margin: 10px;
+    
+}
+.rob{
+    margin-bottom: 10px;
+
+}
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+.chat-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.chat-header p {
+    font-size: 14px;
+}
+
+/* منطقة الرسائل */
+.chat-messages {
+    padding: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.chat-messages p{
+    display: block;
+  
 }
 
 
-.feature-imgs:hover {
-    transform: scale(1.1) rotate(2deg);
-   
+.message {
+    margin-bottom: 20px;
+
 }
+
+.message-content {
+    max-width: 80%;
+    padding: 12px 18px;
+    border-radius: 18px;
+    line-height: 1.5;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.bot-message {
+    justify-content: flex-start;
+}
+
+.bot-message .message-content {
+    background: linear-gradient(135deg, #8e8e8e, #d6d6d6);
+    color: #000;
+}
+
+.user-message {
+    justify-content: flex-end;
+}
+
+.user-message .message-content {
+
+    color: #ffffff;
+}
+
+/* منطقة الإدخال */
+.chat-input {
+    display: flex;
+  
+    border: none; 
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+}
+
+.chat-input input::placeholder {
+    color: #bbbbbb;
+}
+
+.chat-input img {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.chat-input img:hover {
+    transform: scale(1.1);
+}
+
+#user-input{
+    height: 40px;
+}
+
 .feat-title{
     margin: 50px 100px;
     letter-spacing: 1px;
@@ -249,45 +363,61 @@ margin-top: 15px;
 
 }
 
-.robot-container {
-    position: relative;
-    display: inline-block;
-}
 
-.robot-message {
-    position: absolute;
-    top: 50%;
-    left: 110%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.9);
 
-    padding: 8px 12px;
-    border-radius: 10px;
-    font-size: 14px;
-    white-space: nowrap;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    opacity: 0; 
-    transition: opacity 0.3s ease-in-out;
-}
-.swiper-custom {
-    width: 70%;
-    height: 800px;
 
-    border-radius: 50px;
- 
+
+/* Tips Section */
+ .Tips-Section{
+    margin-bottom: 300px;
+    padding: 50px;
+} 
+.lamp{
+    width: 100%;
+    max-width: 200px;
+   
+
+
 }
-.swiper-slide-custom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.Tips-HEADING{
+    margin-bottom: 30px;
 
 }
 
+.tips-container{
+    padding: 40px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left
+    
+}
+
+@media(max-width: 600px){
+
+    .lamp{
+        width: 100%;
+        max-width: 150px;
+        align-items: center;
+    }
 
 
+    
 
 
+}
+@media(max-width: 450px){
+
+    .lamp{
+        width: 100%;
+        max-width: 100px;
+        align-items: center;
+    }
+
+
+    
+
+
+}
 
 
 

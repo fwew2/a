@@ -69,6 +69,9 @@
                 </nav>
             </section>
             <script>
+
+                
+
                 document.getElementById("login-desktop-btn").addEventListener("click", function() {
                     localStorage.setItem("Value", "login");
                 });
@@ -108,13 +111,17 @@
                             <p  class="mt-40 block self-start paragraph-effect" id="main-para" data-aos="fade-right"></p>
 
                             <!-- SELECTION -->
-                            <select class="hero-main-selection " name="" id="" data-aos="fade-right" data-aos-duration="300">
-                                <option value="">Freshman</option>
-                                <option value="">Sophomore</option>
-                                <option value="">Junior</option>
-                                <option value="">Senior</option>
-                                <option value="">Master</option>
+                            <select class="hero-main-selection" id="yearSelect" data-aos="fade-right" data-aos-duration="300">
+                                <option value="freshman.html" class="selected">Freshman</option>
+                                <option value="sophomore.html">Sophomore</option>
+                                <option value="junior.html">Junior</option>
+                                <option value="senior.html">Senior</option>
+                                <option value="master.html">Master</option>
                             </select>
+
+
+
+
 
                         </div>
 
@@ -328,31 +335,7 @@
 
 
         <main>
-            <!-- Work with section -->
-            <section class="Work-with-section text-center">
-                <h2 class="work-with-heading" data-aos="fade-down-right"><span class="highlight "> We collaborate</span> with various website APIs to create a smarter and more advanced learning journey!</h2>
-                <div class="flex justify-around flex-wrap work-con">
-
-                    <a href="https://codeforces.com/"><img class="work-imgs " src="assets/amazon-da-tagliare-ok-e1566819574998-removebg-preview.png" alt=""
-                        data-aos="fade-right">
-                    </a>
-                  
-                        <img class="work-imgs" src="assets/693b180beb15b2859dcd79a2aa738009-removebg-preview.png" alt=""data-aos="fade-up">
-                
-                       
-                  
-                    <a href="https://www.hackerrank.com/">
-                        <img class="d" src="assets/160_Hackerrank_logo_logos-512.webp" alt=""data-aos="fade-up">
-                    </a>
-
-                    
-                    
-                    <a href="https://www.w3schools.com">
-                        <img class="work-imgs" src="assets/channels4_profile-removebg-preview.png" alt=""data-aos="fade-left">
-                    </a>
-                  
-                </div>
-            </section>
+            
 
 
             <!--Master courses grid  -->
@@ -379,24 +362,28 @@
                             <img class="w" width="96" height="96" src="https://img.icons8.com/nolan/96/laravel.png" alt="laravel"/>
                             <h4 class="master-courses-title">Master Laravel</h4>
                             <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
+                            <p class="small-p paragraph-effect"><a href="Auth.html">Show more</a></p>
                         </div>
                         
                         <div class="master-courses-element">
                             <img class="w"  width="100" height="100" src="https://img.icons8.com/plasticine/100/react.png" alt="react"/>
                             <h4 class="master-courses-title">Master React</h4>
                             <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
+                            <p class="small-p paragraph-effect"><a href="Auth.html">Show more</a></p>
                         </div>
             
                         <div class="master-courses-element">
                             <img class="w"  width="96" height="96" src="https://img.icons8.com/color/96/nuxt-jc.png" alt="nuxt-jc"/>
                             <h4 class="master-courses-title">Master Vue js</h4>
                             <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
+                            <p class="small-p paragraph-effect"><a href="Auth.html">Show more</a></p>
                         </div>
 
                         <div class="master-courses-element">
                             <img class="w"  width="96" height="96" src="https://img.icons8.com/nolan/96/sass.png" alt="sass"/>
                             <h4 class="master-courses-title">Master Sass</h4>
                             <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
+                            <p class="small-p paragraph-effect"><a href="Auth.html">Show more</a></p>
                         </div>
 
 
@@ -404,6 +391,7 @@
                             <img class="w"  width="96" height="96" src="https://img.icons8.com/fluency/96/node-js.png" alt="node-js"/> 
                             <h4 class="master-courses-title">Master Node js</h4>
                             <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
+                            <p class="small-p paragraph-effect"><a href="Auth.html">Show more</a></p>
                         </div>
 
 
@@ -411,6 +399,7 @@
                             <img class="w"  width="96" height="96" src="https://img.icons8.com/color/96/net-framework.png" alt="net-framework"/>
                             <h4 class="master-courses-title">Master .net</h4>
                             <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
+                            <p class="small-p paragraph-effect"><a href="Auth.html">Show more</a></p>
                         </div>
             
                     </div>
@@ -418,16 +407,6 @@
                 </div>
 
             </section>
-            <script>
-                let course=document.querySelectorAll(".master-courses-element");
-                console.log(course);
-
-                for(let i=0;i<course.length;i++){
-                    course[i].addEventListener("click",function(){
-                        window.location.href = "file:///C:/Users/FODA/Desktop/SVNUS%20CS/Auth.html";
-                    })
-                }
-            </script>
 
 
 
@@ -436,80 +415,156 @@
 
 
             <!-- roboot   -->
-            <section class="fea">
-                <div class="swiper-slide swiper-slide-custom text-center" >
+             
+            <section class="roboot_section " >
 
+                <div class="flex  justify-center flex-wrap items-center">
 
+                    <img class="ch1 feature-section-imgs feature-imgs" src="assets/3532.jpg" alt="" data-aos="fade-right">
 
+                    <div class="chat-container "data-aos="fade-left">
 
-                    <img class="ch1 feature-section-imgs w feature-imgs" src="assets/3532.jpg" alt=""
-                    data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500"
-                    >
-                    <div>
-                        <h3 class="feat-title">Ai Chatbot</h3>
-                        <p class="ch2 paragraph-effect feat-para" id="typing-paragraph"></p>
-
-
-                     
+                      
+                            <div class="chat-header">
+                                <h2 class="MASTER-COURSES-HEADING rob"><span class="highlight">Axon</span> Chatbot</h2>
+                                <p class="paragraph-effect">What can I help with?</p>
+                            </div>
+                            
+                            <div class="chat-messages" id="chat-messages">
+                                <div class="message bot-message" id="bot-message">
+                                </div>
+                            </div>
+                            
+                            <div class="chat-input">
+                                <input type="text" id="user-input" placeholder="Ask anything">
+                                
+                                <img id="send-button" width="40" height="48" src="https://img.icons8.com/color/48/send-letter.png" alt="send-letter"/>
+                            </div>
                     </div>
-                    
+
+
+
+
+
                 </div>
     
             </section>
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const text = "Our website’s AI system is powered by a cutting-edge model from the latest fourth generation, ensuring high accuracy and efficiency...";
-                    const paragraph = document.getElementById("typing-paragraph");
-                    let index = 0;
-                    let isTyping = false; // لتجنب التكرار عند السكرول المتكرر
+                const chatMessages = document.getElementById('bot-message');
+                const userInput = document.getElementById('user-input');
+                const sendButton = document.getElementById('send-button');
 
-                    function type() {
-                        if (index < text.length) {
-                            paragraph.innerHTML += text[index]; // إضافة الحرف التالي
-                            index++;
-                            setTimeout(type, 60); // سرعة الكتابة
-                        }
-                        else {
-                            paragraph.style.opacity = "1"; // بعد انتهاء الكتابة تصبح الفقرة مرئية
-                        }
-                    }
-
-                    const observer = new IntersectionObserver(entries => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting && !isTyping) {
-                                isTyping = true; // يمنع إعادة تشغيل التأثير عند إعادة السكرول
-                                type(); // بدء الكتابة
-                            }
-                        });
-                    }, { threshold: 0.5 }); // التأثير يبدأ عندما يكون 50% من العنصر ظاهرًا
-
-                    observer.observe(paragraph); // مراقب
-
-
-                    
+                sendButton.addEventListener('click', function(){
+                     const userMessage = userInput.value;
+                    const messageElement = document.createElement('p');
+        
+                    messageElement.innerHTML = `<p class="msg">${userMessage}</p>`;
+                    chatMessages.appendChild(messageElement);
+                    userInput.value= "";
+                  
                 });
-
-
-
+                sendButton.addEventListener('enter', function(){
+                     const userMessage = userInput.value;
+                    const messageElement = document.createElement('p');
+        
+                    messageElement.innerHTML = `<p class="msg">${userMessage}</p>`;
+                    chatMessages.appendChild(messageElement);
+                    userInput.value= "";
+                  
+                });
             </script>
 
 
-        </main>
+  
 
 
 
-    </div>
 
 
-    <div class="outfooter">
-        <div class="all-code-container">
-            
+
+
+
+
+
+
+
+
+
+
+
+
+            </section>
+
+            <!-- Tips Section -->
+            <section class="Tips-Section">
+
+    
+                <div class="text-center">
+                    <h2 class="MASTER-COURSES-HEADING Tips-HEADING"><span class="highlight">Daily </span> Tips</h2>
+                    <div><img src="assets/Frame 6.png" alt="" class="lamp w" ></div>
+                    <P class="paragraph-effect">Quick tips to level up your coding and solve problems faster.
+
+
+
+
+
+
+
+
+                    </P>
+                    <div class="tips-container">
+                        <p>dasd</p>
+                        <p>dasd</p>
+                        <p>dasd</p>
+                        <p>dasd</p>
+                        <p>dasd</p>
+                        <p>dasd</p>
+                        <p>dasd</p>
+
+                        <p>dasd</p>
+                        <p>dasd</p>
+                        <p>dasd</p>
+                        <p>dasd</p>
+                        <p>dasd</p>
+                        <p>dasd</p>
+                    </div>
+
+
+
+                </div>
+            </section>
+           
+            <!-- Work with section -->
+            <section class="Work-with-section text-center">
+                <h2 class="work-with-heading" data-aos="fade-down-right"><span class="highlight"> We collaborate</span> with various website APIs to create a smarter and more advanced learning journey!</h2>
+                <div class="flex justify-around flex-wrap work-con">
+
+                    <a href="https://codeforces.com/"><img class="work-imgs " src="assets/amazon-da-tagliare-ok-e1566819574998-removebg-preview.png" alt=""
+                        data-aos="fade-right">
+                    </a>
+                
+                        <img class="work-imgs" src="assets/693b180beb15b2859dcd79a2aa738009-removebg-preview.png" alt=""data-aos="fade-up">
+                
+                    
+                
+                    <a href="https://www.hackerrank.com/">
+                        <img class="d" src="assets/160_Hackerrank_logo_logos-512.webp" alt=""data-aos="fade-up">
+                    </a>
+
+                    
+                    
+                    <a href="https://www.w3schools.com">
+                        <img class="work-imgs" src="assets/channels4_profile-removebg-preview.png" alt=""data-aos="fade-left">
+                    </a>
+                
+                </div>
+
+
+ 
+
             <!-- About us -->
             <section class="About-SECTION overflow-hidden" id="About" 
             data-aos="fade-up"
-            data-aos-duration="3000"
             
             >
                 <h2 class="text-center about-heading"><span class="highlight">About</span>Us</h2>
@@ -544,19 +599,18 @@
                             <h4 class="abouhth4-heading justify-self-center">Our Team    <img width="30" height="50" src="https://img.icons8.com/color/96/commercial-development-management.png" alt="commercial-development-management" style="display: inline-block;"/></h4>
                             <p class="paragraph-effect our-team-sec">
                                 <div class="grid grid-cols-3 gap-3">
-                                   <h5 class="about-names" >FADi 3mad</h5>
-                                   <h5 class="about-names">Marina Hany</h5>
-                                   <h5 class="about-names">Marina Monsef</h5>
-                                   <h5 class="about-names">Afedokya Ayman</h5>
+                                    <h5 class="about-names" >FADi 3mad</h5>
+                                    <h5 class="about-names">Marina Hany</h5>
+                                    <h5 class="about-names">Marina Monsef</h5>
+                                    <h5 class="about-names">Afedokya Ayman</h5>
                                     <h5 class="about-names">Mahmoud Abd El 3azez</h5>
-                                   <h5 class="about-names">Mena Mamdou7</h5>
-                                 
-                                   <h5 class="about-names">Kerolos Emil</h5>
-                                   <h5 class="about-names">Mohraiel Amir</h5>
-                                   <h5 class="about-names">Mariam Shamell</h5>
-                                   <h5 class="about-names">Martina Mekhael</h5>
-                                   <h5 class="about-names">Mariam Eshak</h5>
-                               
+                                    <h5 class="about-names">Mena Mamdou7</h5>
+                                    <h5 class="about-names">Kerolos Emil</h5>
+                                    <h5 class="about-names">Mohraiel Amir</h5>
+                                    <h5 class="about-names">Mariam Shamell</h5>
+                                    <h5 class="about-names">Martina Mekhael</h5>
+                                    <h5 class="about-names">Mariam Eshak</h5>
+                                
                                 </div>
 
 
@@ -569,12 +623,25 @@
                         <div class="order-5">
                             <h4 class="abouhth4-heading">Privacy && Policy</h4>
                             <p class="paragraph-effect">We protect your data, improve services, never share, and ensure security.</p>
- 
+    
                         </div>
             
                     </div>
                 </div>
             </section> 
+
+
+        </main>
+
+
+
+    </div>
+
+
+    <div class="outfooter">
+        <div class="all-code-container">
+            
+
 
 
             <!-- Footer -->
