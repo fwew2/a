@@ -354,7 +354,22 @@ margin-top: 15px;
     margin-bottom: 50px;
  
 }
+.user-msg{
+    text-align: end;
 
+    padding: 2px;
+    padding-right: 5px;
+    margin-right: 2px;
+}
+.robot-msg{
+    text-align: left;
+
+    padding: 2px;
+    padding-left: 5px;
+    margin-left: 2px;
+
+    
+}
 
 .feat-para:hover {
     opacity: 1;
@@ -385,11 +400,16 @@ margin-top: 15px;
 }
 
 .tips-container{
+    margin-top: 40px;
     padding: 40px;
     max-height: 200px;
     overflow-y: auto;
     text-align: left
     
+    
+}
+.tip{
+    margin: 15px;
 }
 
 @media(max-width: 600px){
@@ -412,6 +432,19 @@ margin-top: 15px;
         max-width: 100px;
         align-items: center;
     }
+    .tip{
+        margin: 1px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    .tips-container{
+        margin-top: 40px;
+        padding: 5px;
+
+        
+        
+    }
+    
 
 
     

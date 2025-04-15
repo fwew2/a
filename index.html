@@ -432,12 +432,13 @@
                             
                             <div class="chat-messages" id="chat-messages">
                                 <div class="message bot-message" id="bot-message">
+
                                 </div>
                             </div>
                             
                             <div class="chat-input">
                                 <input type="text" id="user-input" placeholder="Ask anything">
-                                
+                              
                                 <img id="send-button" width="40" height="48" src="https://img.icons8.com/color/48/send-letter.png" alt="send-letter"/>
                             </div>
                     </div>
@@ -453,26 +454,38 @@
                 const chatMessages = document.getElementById('bot-message');
                 const userInput = document.getElementById('user-input');
                 const sendButton = document.getElementById('send-button');
+            
+                sendButton.addEventListener('click', function () {
+                    const userMessage = userInput.value;
+                    const messageElement = document.createElement('p');
+            
+                    messageElement.innerHTML = `<p class="user-msg">${userMessage}</p>`;
+                    chatMessages.appendChild(messageElement);
+                    userInput.value = "";
 
-                sendButton.addEventListener('click', function(){
-                     const userMessage = userInput.value;
-                    const messageElement = document.createElement('p');
+
+                    setTimeout(function () {
         
-                    messageElement.innerHTML = `<p class="msg">${userMessage}</p>`;
-                    chatMessages.appendChild(messageElement);
-                    userInput.value= "";
-                  
-                });
-                sendButton.addEventListener('enter', function(){
-                     const userMessage = userInput.value;
-                    const messageElement = document.createElement('p');
-        
-                    messageElement.innerHTML = `<p class="msg">${userMessage}</p>`;
-                    chatMessages.appendChild(messageElement);
-                    userInput.value= "";
-                  
+
+                        const robootreplay = document.createElement('p');
+                        robootreplay.classList.add('robot-msg','paragraph-effect');
+                        chatMessages.appendChild(robootreplay);
+            
+                        const replyText = "Welcome! I'm Axon, your friendly assistant. Ask me anything and I'll be happy to help!";
+                        let index = 0;
+            
+                        const typingEffect = setInterval(() => {
+                            if (index < replyText.length) {
+                                robootreplay.textContent += replyText[index];
+                                index++;
+                            } else {
+                                clearInterval(typingEffect);
+                            }
+                        }, 50); 
+                    }, 1000);
                 });
             </script>
+            
 
 
   
@@ -513,20 +526,16 @@
 
                     </P>
                     <div class="tips-container">
-                        <p>dasd</p>
-                        <p>dasd</p>
-                        <p>dasd</p>
-                        <p>dasd</p>
-                        <p>dasd</p>
-                        <p>dasd</p>
-                        <p>dasd</p>
-
-                        <p>dasd</p>
-                        <p>dasd</p>
-                        <p>dasd</p>
-                        <p>dasd</p>
-                        <p>dasd</p>
-                        <p>dasd</p>
+                        <p class="paragraph-effect tip">💡 1. Always use descriptive variable names in any language.</p>
+                        <p class="paragraph-effect tip">💡 2. Comment your code to make it easier to understand later.</p>
+                        <p class="paragraph-effect tip">💡 3. Avoid hardcoding values; use constants instead.</p>
+                        <p class="paragraph-effect tip">💡 4. Keep functions small and focused on a single task.</p>
+                        <p class="paragraph-effect tip">💡 5. Use proper error handling to prevent crashes in production.</p>
+                        <p class="paragraph-effect tip">💡 6. In Python, use list comprehensions for concise loops.</p>
+                        <p class="paragraph-effect tip">💡 7. In C++, use smart pointers to manage memory automatically.</p>
+                        <p class="paragraph-effect tip">💡 8. Always validate user inputs to avoid security vulnerabilities.</p>
+                        <p class="paragraph-effect tip">💡 9. In JavaScript, prefer 'let' and 'const' over 'var' for better scoping.</p>
+                        <p class="paragraph-effect tip">💡 10. Use version control (e.g., Git) for managing your codebase effectively.</p>
                     </div>
 
 
