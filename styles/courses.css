@@ -3,22 +3,19 @@
    
 }
 .NAVBR-SECTION{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
 }  
 .sidebar {
-    padding: 20px;
+    padding: 3;
+    margin-top: 10px;
     min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+
 
 .menu-item {
     display: flex;
@@ -51,22 +48,22 @@
 
 .aside-line-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 
 .aside-line {
     background-color: #333;
     width: 1px;
     height: 100%;
-
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    margin: 5px;
 }
 
 .courses-grid {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-   padding: 200px 110px; ;
+    padding: 200px 110px; 
     padding: 10px;
     overflow-y: auto;
     height: 700px;

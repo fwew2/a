@@ -33,7 +33,7 @@
             <!-- NAVBAR SECTION -->
             <section class="NAVBR-SECTION" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <!-- NAVBAR -->
-                <nav class="navbar">
+                <nav class="navbars">
 
                     <!-- Logo -->
                     <a href="index.html"><img class="main-logo" src="assets/Card elements04.png" alt="Logo"></a>
@@ -43,8 +43,10 @@
                         <li><a href="index.html" class="links" >Home</a></li>
                         <li><a href="courses.html" class="links">Courses</a></li>
                         <li><a href="" class="links">Community</a></li>
+                        <li><a href="#Axon" class="links">Axon</a></li>
                         <li><a href="#About" class="links">About</a></li>
-                        <li><a href="" class="links">Contact</a></li>
+                        <li><a href="contact.html" class="links">Contact</a></li>
+                      
                     </ul>
 
                     <ul class="navelements nav-butns desktopnav">
@@ -333,13 +335,15 @@
             </div>
         </section>
 
+    </div>
 
-        <main>
-            
+    <main>  
+        <div class="all-code-container">     
+                
 
 
             <!--Master courses grid  -->
-            <section class="MASTER-COURSES-SECTION text-center" data-aos="zoom-in-up">
+            <section class="MASTER-COURSES-SECTION text-center" data-aos="zoom-in-up" >
                 <h2 class="MASTER-COURSES-HEADING"
                 data-aos="fade-right"
                 data-aos-offset="300"
@@ -350,12 +354,7 @@
                 <div class="flex justify-center">
 
                 
-                    <div class="grid grid-cols-3 gap-5 master-courses-container "
-                    data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500"
-                    
-                    >
+                    <div class="grid grid-cols-3 gap-5 master-courses-container "data-aos="fade-down" data-aos-easing="linear"data-aos-duration="1500">
 
 
                         <div class="master-courses-element" >
@@ -387,7 +386,7 @@
                         </div>
 
 
-                        <div class="master-courses-element">
+                        <div class="master-courses-element" > 
                             <img class="w"  width="96" height="96" src="https://img.icons8.com/fluency/96/node-js.png" alt="node-js"/> 
                             <h4 class="master-courses-title">Master Node js</h4>
                             <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
@@ -395,7 +394,7 @@
                         </div>
 
 
-                        <div class="master-courses-element">
+                        <div class="master-courses-element"  id="Axon" >
                             <img class="w"  width="96" height="96" src="https://img.icons8.com/color/96/net-framework.png" alt="net-framework"/>
                             <h4 class="master-courses-title">Master .net</h4>
                             <p class="paragraph-effect master-courses-status">TCS Campus Drive-2024</p>
@@ -406,7 +405,7 @@
             
                 </div>
 
-            </section>
+            </section >
 
 
 
@@ -415,7 +414,7 @@
 
 
             <!-- roboot   -->
-             
+            
             <section class="roboot_section " >
 
                 <div class="flex  justify-center flex-wrap items-center">
@@ -424,7 +423,7 @@
 
                     <div class="chat-container "data-aos="fade-left">
 
-                      
+                    
                             <div class="chat-header">
                                 <h2 class="MASTER-COURSES-HEADING rob"><span class="highlight">Axon</span> Chatbot</h2>
                                 <p class="paragraph-effect">What can I help with?</p>
@@ -438,7 +437,7 @@
                             
                             <div class="chat-input">
                                 <input type="text" id="user-input" placeholder="Ask anything">
-                              
+                            
                                 <img id="send-button" width="40" height="48" src="https://img.icons8.com/color/48/send-letter.png" alt="send-letter"/>
                             </div>
                     </div>
@@ -484,11 +483,12 @@
                         }, 50); 
                     }, 1000);
                 });
+
             </script>
             
 
 
-  
+
 
 
 
@@ -508,13 +508,51 @@
 
             </section>
 
+
+            
+
+        </div> 
+
+                <!-- Work with div -->
+                <div class="black-div">
+                    <div class="all-code-container">
+                        <!-- Work with section -->
+                        <section class="Work-with-section text-center">
+                            <h2 class="work-with-heading" data-aos="fade-down-right"><span class="highlight"> We collaborate</span> with various website APIs to create a smarter and more advanced learning journey!</h2>
+                            <div class="flex justify-around flex-wrap work-con">
+        
+                                <a href="https://codeforces.com/"><img class="work-imgs " src="assets/amazon-da-tagliare-ok-e1566819574998-removebg-preview.png" alt=""
+                                    data-aos="fade-right">
+                                </a>
+                            
+                                    <img class="work-imgs" src="assets/693b180beb15b2859dcd79a2aa738009-removebg-preview.png" alt=""data-aos="fade-up">
+                            
+                                
+                            
+                                <a href="https://www.hackerrank.com/">
+                                    <img class="d" src="assets/160_Hackerrank_logo_logos-512.webp" alt=""data-aos="fade-up">
+                                </a>
+        
+                                
+                                
+                                <a href="https://www.w3schools.com">
+                                    <img class="work-imgs" src="assets/channels4_profile-removebg-preview.png" alt=""data-aos="fade-left">
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+        <div class="all-code-container">
             <!-- Tips Section -->
             <section class="Tips-Section">
 
-    
+                
                 <div class="text-center">
                     <h2 class="MASTER-COURSES-HEADING Tips-HEADING"><span class="highlight">Daily </span> Tips</h2>
-                    <div><img src="assets/Frame 6.png" alt="" class="lamp w" ></div>
+                    <div><img src="assets/Frame 6.png" alt="" class="lamp w" 
+                        data-aos="fade-down"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine"></div>
                     <P class="paragraph-effect">Quick tips to level up your coding and solve problems faster.
 
 
@@ -525,7 +563,11 @@
 
 
                     </P>
-                    <div class="tips-container">
+                    <div class="tips-container"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    >
                         <p class="paragraph-effect tip">💡 1. Always use descriptive variable names in any language.</p>
                         <p class="paragraph-effect tip">💡 2. Comment your code to make it easier to understand later.</p>
                         <p class="paragraph-effect tip">💡 3. Avoid hardcoding values; use constants instead.</p>
@@ -542,38 +584,69 @@
 
                 </div>
             </section>
-           
-            <!-- Work with section -->
-            <section class="Work-with-section text-center">
-                <h2 class="work-with-heading" data-aos="fade-down-right"><span class="highlight"> We collaborate</span> with various website APIs to create a smarter and more advanced learning journey!</h2>
-                <div class="flex justify-around flex-wrap work-con">
 
-                    <a href="https://codeforces.com/"><img class="work-imgs " src="assets/amazon-da-tagliare-ok-e1566819574998-removebg-preview.png" alt=""
-                        data-aos="fade-right">
-                    </a>
+
+
+
+
+        </div>
+
+        </div>
+        
+
+
+         
+
+        <!-- anydesk div -->
+        <div class="black-div">
+            <div class="all-code-container">
+            
+                <section class="section">
+                    <h2><strong>AnyDesk</strong> fits your <span class="highlight">needs</span></h2>
                 
-                        <img class="work-imgs" src="assets/693b180beb15b2859dcd79a2aa738009-removebg-preview.png" alt=""data-aos="fade-up">
+                    <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🏠</div>
+                        <div class="feature-title"><h5>Runs in Cloud or On-Premises</h5></div>
+                        <p>
+                        Choose our cloud solution to benefit from our infrastructure and service or install on your own servers and work completely independently.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
                 
-                    
+                    <div class="feature">
+                        <div class="feature-icon">📱</div>
+                        <div class="feature-title">Full mobile support</div>
+                        <p>
+                        Access and control desktops, servers, machines, and devices via smartphone or tablet. Cross-compatible and platform independent.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
                 
-                    <a href="https://www.hackerrank.com/">
-                        <img class="d" src="assets/160_Hackerrank_logo_logos-512.webp" alt=""data-aos="fade-up">
-                    </a>
+                    <div class="feature">
+                        <div class="feature-icon">🎨</div>
+                        <div class="feature-title">Flexibility & customization</div>
+                        <p>
+                        Create your own version of AnyDesk and fit it to your individual needs. Allow a consistent brand experience for your users.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    </div>
+                </section>
 
-                    
-                    
-                    <a href="https://www.w3schools.com">
-                        <img class="work-imgs" src="assets/channels4_profile-removebg-preview.png" alt=""data-aos="fade-left">
-                    </a>
+            </div>
+        </div>
+
                 
-                </div>
 
 
- 
 
+
+        <div class="all-code-container">
             <!-- About us -->
             <section class="About-SECTION overflow-hidden" id="About" 
             data-aos="fade-up"
+            data-aos-duration="3000"
             
             >
                 <h2 class="text-center about-heading"><span class="highlight">About</span>Us</h2>
@@ -609,11 +682,14 @@
                             <p class="paragraph-effect our-team-sec">
                                 <div class="grid grid-cols-3 gap-3">
                                     <h5 class="about-names" >FADi 3mad</h5>
-                                    <h5 class="about-names">Marina Hany</h5>
                                     <h5 class="about-names">Marina Monsef</h5>
-                                    <h5 class="about-names">Afedokya Ayman</h5>
+                                    <h5 class="about-names">Marina Monsef</h5>
+
+                                    <h5 class="about-names">Marina Hany</h5>
+                                    <h5 class="about-names">Afdokya Ayman</h5>
                                     <h5 class="about-names">Mahmoud Abd El 3azez</h5>
                                     <h5 class="about-names">Mena Mamdou7</h5>
+                                    
                                     <h5 class="about-names">Kerolos Emil</h5>
                                     <h5 class="about-names">Mohraiel Amir</h5>
                                     <h5 class="about-names">Mariam Shamell</h5>
@@ -632,19 +708,16 @@
                         <div class="order-5">
                             <h4 class="abouhth4-heading">Privacy && Policy</h4>
                             <p class="paragraph-effect">We protect your data, improve services, never share, and ensure security.</p>
-    
+
                         </div>
             
                     </div>
                 </div>
             </section> 
+        </div>
 
+    </main>
 
-        </main>
-
-
-
-    </div>
 
 
     <div class="outfooter">

@@ -12,6 +12,7 @@
     padding: 15px;
     max-width: 1200px;
     overflow: hidden;
+    
 }
 body{
     font-weight: 400;
@@ -67,7 +68,9 @@ label{
     color: whitesmoke;
 }
 
-
+.black-div{
+    background-color: black;
+}
 /* --------------- Text --------------- */
 .highlight {
     background: linear-gradient(to right, #1F5EFF, #B986DD);
@@ -220,7 +223,7 @@ label{
     backdrop-filter: blur(50px); 
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
 }  
-.navbar{
+.navbars{
     display: flex;
     justify-content: space-between;
     align-items: center;

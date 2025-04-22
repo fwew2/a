@@ -89,7 +89,63 @@ margin-top: 15px;
 
 
 
+ .section {
+    padding: 60px 20px;
 
+    background-color: black;
+    text-align: center;
+  }
+
+
+
+
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    margin: 0 auto;
+  }
+
+  .feature {
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+  }
+
+  .feature-icon {
+    font-size: 40px;
+    color: #ff4f1f;
+    margin-bottom: 20px;
+  }
+
+  .feature-title {
+    color: #0c2666;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .feature p {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .feature a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff4f1f;
+    text-decoration: none;
+    border-bottom: 1px solid #ff4f1f;
+    padding-bottom: 2px;
+    transition: 0.3s;
+  }
+
+  .feature a:hover {
+    color: #fff;
+    border-color: #fff;
+  }
 
 
 
@@ -204,8 +260,8 @@ margin-top: 15px;
 
 /*-----roboot_section-----*/
 .roboot_section{
-    margin-top: 250px;
-    margin-bottom: 250px;
+    margin-top: 350px;
+    margin-bottom: 350px;
 }
 .feature-imgs {
     max-width: 250px;
@@ -386,6 +442,7 @@ margin-top: 15px;
  .Tips-Section{
     margin-bottom: 300px;
     padding: 50px;
+
 } 
 .lamp{
     width: 100%;
