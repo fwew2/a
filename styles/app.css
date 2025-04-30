@@ -135,9 +135,9 @@ margin-top: 15px;
   .feature a {
     display: inline-block;
     margin-top: 15px;
-    color: #ff4f1f;
+    color: #1F5EFF;
     text-decoration: none;
-    border-bottom: 1px solid #ff4f1f;
+    border-bottom: 1px solid #1F5EFF;
     padding-bottom: 2px;
     transition: 0.3s;
   }
@@ -195,7 +195,7 @@ margin-top: 15px;
 /* MASTER COURSES GRID  */
 .MASTER-COURSES-SECTION{
     margin-top: 200px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 
 }
 .MASTER-COURSES-HEADING{
@@ -260,7 +260,7 @@ margin-top: 15px;
 
 /*-----roboot_section-----*/
 .roboot_section{
-    margin-top: 350px;
+    margin-top: 500px;
     margin-bottom: 350px;
 }
 .feature-imgs {

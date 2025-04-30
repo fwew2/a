@@ -11,7 +11,6 @@ window.addEventListener("scroll",function(){
 
 
 
-
 let scrollbtn=document.getElementById("scrollbtn");
 scrollbtn.addEventListener("click",function(){     
     window.scrollTo(0,0);
