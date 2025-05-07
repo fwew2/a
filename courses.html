@@ -7,17 +7,13 @@
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/courses.css">
 
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
  
    
-
-
-
-
-
 </head>
 <body>
     <div class="all-code-container">
@@ -38,8 +34,6 @@
                     </ul>
 
                     <ul class="navelements nav-butns desktopnav">
-                
-                       
                         <a href=""> <img src="assets/Ellipse 2.png" alt="" class="profile-img"></a>
                     </ul>
 
@@ -54,44 +48,52 @@
                             <li><a href="#" class="mobile-link">logout</a></li>
                         </ul>  
                     </div>
+
                 </nav>
             </section>
-
-            <script>
-                document.getElementById("login-desktop-btn").addEventListener("click", function() {
-                    localStorage.setItem("Value", "login");
-                });
-
-                document.getElementById("Sign-desktop-btn").addEventListener("click", function() {
-                    localStorage.setItem("Value", "Signup");
-                });
-            </script>
-
-
-
         </header>
 
 
 
         <main>
             <div class="container">
+
+
                 <aside class="sidebar">
                     <div class="">
-                    <ul class="menu">
-                        <li class="menu-item"><img width="20" height="20" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/20/external-courses-recruitment-agency-flaticons-lineal-color-flat-icons-2.png" alt="external-courses-recruitment-agency-flaticons-lineal-color-flat-icons-2"/><a href="" >Courses</a></li>
-                        <li class="menu-item"><img width="20" height="20" src="https://img.icons8.com/external-bearicons-blue-bearicons/20/external-To-Do-List-reminder-and-to-do-bearicons-blue-bearicons.png" alt="external-To-Do-List-reminder-and-to-do-bearicons-blue-bearicons"/><a href=""   id="to-do">To-Do List</a></li>
-                        <li class="menu-item"><img width="20" height="20" src="https://img.icons8.com/arcade/20/test.png" alt="test"/><a href=""> Tests</a></li>
-                        <li class="menu-item"><img width="20" height="20" src="https://img.icons8.com/external-flaticons-flat-flat-icons/20/external-problem-solving-creativity-flaticons-flat-flat-icons.png" alt="external-problem-solving-creativity-flaticons-flat-flat-icons"/><a href=""> Problem Solving</a></li>
-                    </ul>
+                        <ul class="menu">
+                            <li class="menu-item"><img width="20" height="20" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/20/external-courses-recruitment-agency-flaticons-lineal-color-flat-icons-2.png" alt="external-courses-recruitment-agency-flaticons-lineal-color-flat-icons-2"/><a href="" >Courses</a></li>
+                            <li class="menu-item"><img width="20" height="20" src="https://img.icons8.com/external-bearicons-blue-bearicons/20/external-To-Do-List-reminder-and-to-do-bearicons-blue-bearicons.png" alt="external-To-Do-List-reminder-and-to-do-bearicons-blue-bearicons"/><a href=""   id="to-do">To-Do List</a></li>
+                            <li class="menu-item"><img width="20" height="20" src="https://img.icons8.com/arcade/20/test.png" alt="test"/><a href=""> Tests</a></li>
+                            <li class="menu-item"><img width="20" height="20" src="https://img.icons8.com/external-flaticons-flat-flat-icons/20/external-problem-solving-creativity-flaticons-flat-flat-icons.png" alt="external-problem-solving-creativity-flaticons-flat-flat-icons"/><a href=""> Problem Solving</a></li>
+                        </ul>
                     </div>
-                    <p class="logout"><img width="20" height="20" src="https://img.icons8.com/ultraviolet/20/exit.png" alt="exit"/><a href="">Logout</a></p>
+                    <p class="logout"><img width="20" height="20" src="https://img.icons8.com/ultraviolet/20/exit.png" alt="exit"/><a href="index.html">Logout</a></p>
                 </aside>
+
+
+
+
+
+
+
         
                 <div class="aside-line-container">
                     <span class="aside-line"></span>
                 </div>
+
+
+
+
+
+
+
+
+
+
               
                 <section class="courses-grid" id="courses-grid">
+
                     <div class="courses-heading">
                         <h3 class="">Sophomore Courses</h3>
                         <div class="courses-subheading">
@@ -99,48 +101,55 @@
                             <p class="paragraph-effect">Here is your courses</p>
                         </div>
                     </div>
-        
+
                     <div class="course-card"> 
                         <img width="96" height="96" src="assets/datastruct.png" alt="Data Structure"> 
                         <h4 class="dashboard-courses-title">Data Structure</h4>
                         <p class="paragraph-effect subtitle">Drive-2024</p>
                         <p class="paragraph-effect small-p">With Dr. Nahla</p>
                     </div>
+
                     <div class="course-card"> 
                         <img width="96" height="96" src="assets/distributed-dbms.svg" alt="Database"> 
                         <h4 class="dashboard-courses-title">Database</h4>
                         <p class="paragraph-effect subtitle">Drive-2024</p>
                         <p class="paragraph-effect small-p">With Dr. Emad</p>
                     </div>
+
                     <div class="course-card"> 
+                        <a href="course.html">
                         <img width="96" height="96" src="assets/web.png" alt="Web"> 
                         <h4 class="dashboard-courses-title">Web</h4>
                         <p class="paragraph-effect subtitle">Drive-2024</p>
                         <p class="paragraph-effect small-p">With Dr. Amal</p>
+                        </a>
                     </div>
+
                     <div class="course-card"> 
                         <img width="96" height="96" src="assets/ph.png" alt="Physics"> 
                         <h4 class="dashboard-courses-title">Physics</h4>
                         <p class="paragraph-effect subtitle">Drive-2024</p>
                         <p class="paragraph-effect small-p">With Dr. Badry</p>
                     </div>
+
                     <div class="course-card"> 
                         <img width="96" height="96" src="assets/ds.png" alt="Parallel Program"> 
                         <h4 class="dashboard-courses-title">Parallel </h4>
                         <p class="paragraph-effect subtitle">Drive-2024</p>
                         <p class="paragraph-effect small-p">With Dr. Hamam</p>
                     </div>
+
                     <div class="course-card"> 
                         <img width="96" height="96" src="assets/mo.png" alt="Model&Simulat"> 
-                        <h4 class="dashboard-courses-title">Model&Simulat</h4>
+                        <h4 class="dashboard-courses-title">Modeling</h4>
                         <p class="paragraph-effect subtitle">Drive-2024</p>
                         <p class="paragraph-effect small-p">With Dr. Sara</p>
-                        
                     </div>
-                    
-
-
                 </section>
+
+
+
+
             </div>
         </main>
 

@@ -7,7 +7,7 @@
 
 }  
 .sidebar {
-    padding: 3;
+    padding: 3px;
     margin-top: 10px;
     min-width: 200px;
     display: flex;
@@ -34,7 +34,6 @@
 
 .menu-item a {
     color: white;
-
 }
 
 .logout {
@@ -49,7 +48,6 @@
 .aside-line-container {
     display: flex;
     justify-content: space-between;
-
 }
 
 .aside-line {
@@ -91,8 +89,6 @@
     border-radius: 10px;
     box-shadow: 0 0 10px 3px #0c2666;
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
    

@@ -1,0 +1,45 @@
+.p_aside{
+    display: flex;
+    justify-content: space-between;
+}
+.NAVBR-SECTION{
+    margin-bottom: 30px;
+
+}  
+.p_aside{
+        border: #0c2666 solid 2px;
+        justify-items: center;
+        background-color: rgba(33, 37, 41, 0.3);
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 3px #0c2666;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 20px;
+    
+}
+.course_content{
+    height: 50px;
+    border-bottom: #1F5EFF solid 0.1px;
+    box-shadow: 3px 0 10px 3px #0c2666;
+}
+.line{
+width: 0.5%;
+border: #1F5EFF solid 0.5px;
+display:block ;
+max-height: 500px;
+box-shadow: 0 0 100px 3px #0c2666;
+
+}
+.line_tex{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media(max-width: 1062px) {
+     .line{
+        display: none;
+     }
+ }
+
