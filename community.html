@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>comunity</title>
+    <link rel="stylesheet" href="styles/community.css">
+    <link rel="stylesheet" href="styles/components.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="all-code-container">  
+  <header>
+    <!--START NAVBAR SECTION -->
+    <section class="NAVBR-SECTION" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <!-- NAVBAR -->
+        <nav class="navbars">
+
+            <!-- Logo -->
+            <a href="index.html"><img class="main-logo" src="assets/Card elements04.png" alt="Logo"></a>
+
+            <!-- Desktop nav -->
+            <ul class=" navelements desktopnav">
+                <li><a href="index.html" class="links" >Home</a></li>
+                <li><a href="community.html" class="links">Community</a></li>
+                
+            </ul>
+
+            <ul class="navelements nav-butns desktopnav">
+                
+                       
+              <a href=""> <img src="assets/Ellipse 2.png" alt="" class="profile-img"></a>
+          </ul>
+
+            <!-- Mobile nav -->
+            <button id="menu-btn" class="text-white">☰</button>
+
+            <div id="mobile-menu">
+                <ul>
+                    <li><a href="index.html" class="mobile-link">Home</a></li>
+                    <li><a href="community.html" class="mobile-link">Community</a></li>
+
+                </ul>  
+            </div>
+        </nav>
+    </section>
+
+    <script>
+      document.getElementById("login-desktop-btn").addEventListener("click", function() {
+          localStorage.setItem("Value", "login");
+      });
+
+      document.getElementById("Sign-desktop-btn").addEventListener("click", function() {
+          localStorage.setItem("Value", "Signup");
+      });
+   </script>
+          <!-- END NAVBAR SECTION -->
+
+
+  </header>
+  <br>
+
+      <div id="head">
+           <h1><samp class="highlight">Community</samp></h1>
+      </div>
+
+     <div class="allmessages">
+
+      <div class="message1" id="message1" style="color: aliceblue;">
+          <pre >
+             Lorem ipsum dolor sit amet, consectetur 
+                                              7:00 AM
+           </pre>
+      </div>
+
+   <br>
+
+      <div class="message1" id="message2" style="color: aliceblue;">
+           <pre >
+           Lorem ipsum dolor sit amet, consectetur 
+           adipisicing elit. Delectus.
+                                                   7:30AM
+           </pre>
+      </div>
+
+   <br>
+
+     <div  class="message1" id="message3" style="color: aliceblue;" >
+       <pre >
+          Lorem ipsum dolor sit amet, consectetur 
+         adipisicing elit. Delectus.
+                                                  7:35 AM
+        </pre>
+      </div>
+
+     <br>
+
+     <div class="message4" id="message4" style="color: aliceblue;">
+       <pre >
+         Lorem ipsum dolor sit amet, consectetur 
+                                                  8:00 AM
+        </pre>
+     </div>
+
+     <br>
+
+   <div>
+         <input id="messages" type="text" placeholder =" Type message" >
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

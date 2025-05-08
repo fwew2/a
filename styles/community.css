@@ -1,0 +1,100 @@
+
+.highlight {
+    font-size: 60px;
+    background: linear-gradient(to right, #a452de, #e0e2e5);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    display: flex;
+
+
+}
+
+
+#messages
+{
+  background: rgb(47, 47, 49);
+  border-radius: 10px 10px;
+  border-color: rgb(74, 11, 169);
+  position: fixed;
+  width: 80%;
+  height: 30px;
+  left: 10%;
+  bottom: 3%;
+}
+
+
+
+#message1{
+    border: solid 3px rgb(50, 50, 51);
+    border-radius: 5px 5px;
+    width:fit-content;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+    left: 5%;
+    bottom:55% ;
+    display: flex;
+}
+#message2{
+    border: solid 3px rgb(50, 50, 51);
+    border-radius: 5px 5px;
+    width:fit-content;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+    left: 5%;
+    bottom: 40%;
+    display: flex;
+}
+#message3{
+    border: solid 3px rgb(50, 50, 51);
+    border-radius: 5px 5px;
+    width:fit-content;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+    left: 5%;
+    bottom:25%;
+    display: flex;
+}
+#message4{
+    border: solid 3px  rgb(52, 16, 105);
+    border-radius: 5px 5px;
+    width:fit-content;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+    bottom: 10%;
+    right: 5%;
+    display: flex;
+
+}
+
+.allmessages {
+       display: flex;
+
+}
+
+.message1
+{
+    background : rgb(40, 39, 41);
+    display: flex;
+}
+.message4
+{
+    background: rgb(44, 5, 117);
+    display: flex;
+}
+
+
